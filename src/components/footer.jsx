@@ -25,11 +25,11 @@ export const Footer = () => {
 
                 <div className='mt-5 mb-3'>
                     <div className='row'>
-                        <div className='col-md-4' id='foot1'>
+                        <div className='col-md-4 mb-2' id='foot1'>
                             <p style={{ fontWeight: 700 }}>Golden Royce Design</p>
                             <img src={logo} alt='logo' style={{ width: '50px' }} />
                         </div>
-                        <div className='col-md-4' id='foot2'>
+                        <div className='col-md-4 mb-2' id='foot2'>
                             <h3 style={{ fontWeight: '800' }}><span style={{
                                 backgroundImage: 'linear-gradient(to bottom, #DF2D2D, #FFC800)',
                                 backgroundClip: 'text',
@@ -45,7 +45,7 @@ export const Footer = () => {
                                 </div>
                             </form>
                         </div>
-                        <div className='col-md-4' id='foot3'>
+                        <div className='col-md-4 mb-2' id='foot3'>
                             <div className='button gap-2'>
                                 <span className="arrow-circle">&#8594;</span>
                                 <button style={{ border: 'none', background: 'transparent', color: 'white', fontWeight: '700' }}>Hire us</button>
