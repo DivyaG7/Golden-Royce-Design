@@ -10,7 +10,7 @@ export const Footer = () => {
         <div>
             <div className='footer mt-5'>
                 <div className='row d-flex justify-content-between align-items-center footer-content'>
-                    <div className='col-lg-6 col-md-12 col-12'>
+                    <div className='col-lg-6 col-md-12 col-12 col1'>
                         <h5 className='text-center'>Join us as we pioneer a</h5>
                         <h5 className='text-center'>golden age of technology in India!</h5>
                     </div>
@@ -23,7 +23,7 @@ export const Footer = () => {
                 </div>
 
 
-                <div className='mt-5'>
+                <div className='mt-5 mb-3'>
                     <div className='row'>
                         <div className='col-md-4' id='foot1'>
                             <p style={{ fontWeight: 700 }}>Golden Royce Design</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../components/navbar'
+// import { Navbar } from '../components/navbar'
 import '../pages/Home.css'
 import home1 from '../assets/home1.png'
 import home2 from '../assets/home2.png'
@@ -14,7 +14,7 @@ export const Home = () => {
     return (
         <>
             <div className='home'>
-                <Navbar />
+                {/* <Navbar /> */}
             </div>
 
             <section className='home-page d-flex justify-content-center align-items-center'>
