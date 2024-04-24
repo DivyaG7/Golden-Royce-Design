@@ -17,12 +17,12 @@ export const Service1 = () => {
                     <div className='col-md-4'>
                         <div className='card mb-5'>
                             <div>
-                                <img src={service1} alt='service-img' className='img-fluid w-100'/>
+                                <img src={service1} alt='service-img' className='img-fluid w-100' />
                             </div>
                             <div className='card-body p-4'>
                                 <h4>CLOUD SOLUTION</h4>
                                 <h5>Greater Visibility, Manageability & Flexibility.</h5>
-                                <p className='pb-3' style={{fontSize: '15px'}}>Leverage the power of the cloud with our
+                                <p className='pb-3' style={{ fontSize: '15px' }}>Leverage the power of the cloud with our
                                     scalable and secure solutions. Transform your
                                     operations, enhance flexibility, and achieve
                                     unparalleled business agility</p>
@@ -38,7 +38,7 @@ export const Service1 = () => {
                                 <h4>COGNITIVE OPERATIONS</h4>
                                 <h5>The performance of some composite
                                     cognitive activity</h5>
-                                <p className='pb-3' style={{fontSize: '15px'}}>Embrace the future with cognitive technologies
+                                <p className='pb-3' style={{ fontSize: '15px' }}>Embrace the future with cognitive technologies
                                     that optimize business processes, automate
                                     routine tasks, and unlock new levels of
                                     operational excellence.</p>
@@ -54,7 +54,7 @@ export const Service1 = () => {
                                 <h4>CONSULTING SERVICES</h4>
                                 <h5>Strategy, marketing, organization,
                                     operations, technology</h5>
-                                <p style={{fontSize: '15px'}}>Navigate the complex IT landscape with our
+                                <p style={{ fontSize: '15px' }}>Navigate the complex IT landscape with our
                                     expert consulting services. From strategy
                                     development to implementation, we are your
                                     trusted advisors in achieving sustainable
