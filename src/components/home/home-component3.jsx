@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/home-component3.css';
+import '../home/home-component3.css';
 
 export const Contact = () => {
     const [secondColumnWidth, setSecondColumnWidth] = useState('80%');

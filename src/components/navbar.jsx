@@ -32,7 +32,7 @@ export const Navbar = () => {
                             <div className="nav-column">
                                 <ul className="nav-links">
                                     <li><Link to='/' onClick={toggleNav}><span>01</span>Home</Link></li>
-                                    <li><Link to='/about' onClick={toggleNav}><span>02</span>Work</Link></li>
+                                    <li><Link to='/IT' onClick={toggleNav}><span>02</span>IT</Link></li>
                                     <li><Link to='/services' onClick={toggleNav}><span>03</span>Services</Link></li>
                                 </ul>
                             </div>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import client1 from '../assets/client1.png'
-import client2 from '../assets/client2.png'
-import client3 from '../assets/client3.png'
-import client4 from '../assets/client4.png'
-import client5 from '../assets/client5.png'
-import '../components/home-component2.css'
+import client1 from '../../assets/client1.png'
+import client2 from '../../assets/client2.png'
+import client3 from '../../assets/client3.png'
+import client4 from '../../assets/client4.png'
+import client5 from '../../assets/client5.png'
+import '../home/home-component2.css'
 
 export const Testimonial = () => {
     const [clientInfo, setClientInfo] = useState({ name: 'Name', designation: 'Designation', text: 'Testimonial' });

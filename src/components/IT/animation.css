@@ -1,0 +1,270 @@
+.animation{
+    width: 100%;
+    overflow: hidden;
+    background: #01057F;
+    height: 100vh;
+}
+
+
+  .rotate-left-top {
+    margin-top: -45%;
+    margin-left: -50%;
+    width: 90vw;
+    animation: rotateLeftTopAnimation 2s linear forwards; 
+    animation-iteration-count: 1;
+    transform-origin: left top;
+  }
+
+
+  .rotate-bottom-right {
+    margin-bottom: -30%;
+    margin-left: 60%;
+    width: 80vw;
+    animation: rotateAnimation 2s linear forwards; 
+    animation-iteration-count: 1;
+    transform-origin: bottom right;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(50deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateLeftTopAnimation {
+    from {
+      transform: rotate(50deg);
+    }
+    to {
+      transform: rotate(-0deg);
+    }
+  }
+  
+  .fadeIn {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 6s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .text-white.it-content {
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+
+  }
+  
+  .it-content h1 {
+    font-size: 36px;
+  }
+  
+  .it-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .it{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width:1500px){
+    .it{
+      margin-top: -50%;
+      margin-left: 55%;
+    }
+    .it-content h1 {
+      font-size: 58px;
+    }
+    .it-content p {
+      font-size: 28px;
+    }
+    .it-image img{
+      margin-top: -100%;
+      margin-left: 230%;
+      width: 30vw;
+    }
+  }
+
+  @media screen and (min-width:1200px) and (max-width:1499px){
+    .animation{
+      height: 90vh;
+    }
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+    }
+    .it{
+      margin-top: -40%;
+      margin-left: 55%;
+    }
+    .it-content h1 {
+      font-size: 50px;
+    }
+    .it-content p {
+      font-size: 24px;
+    }
+    .it-image img{
+      margin-top: -80%;
+      margin-left: 230%;
+      width: 30vw;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px){
+    .animation{
+      height: 70vh;
+    }
+    .center {
+      position: absolute;
+      top: 40%;
+      left: 58%;
+    }
+    .it{
+      margin-top: -55%;
+      margin-left: 55%;
+    }
+    .it-content h1 {
+      font-size: 40px;
+    }
+    .it-content p {
+      font-size: 22px;
+    }
+    .it-image img{
+      margin-top: -130%;
+      margin-left: 230%;
+      width: 33vw;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width:767px){
+    .animation{
+      height: 45vh;
+    }
+    .center {
+      position: absolute;
+      top: 35%;
+      left: 60%;
+    }
+    .it{
+      margin-top: -48%;
+      margin-left: 55%;
+      width: 80%;
+      overflow: hidden;
+    }
+
+    .it-content h1 {
+      font-size: 30px;
+    }
+    .it-content p {
+      font-size: 18px;
+      width: 60%;
+    }
+    .it-image img{
+      margin-top: -60%;
+      margin-left: 110%;
+      width: 35vw;
+    }
+  }
+
+  @media screen and (max-width:599px){
+    .animation{
+      height: 40vh;
+    }
+    .center {
+      position: absolute;
+      top: 30%;
+      left: 60%;
+    }
+    .it{
+      margin-top: -60%;
+      margin-left: 52%;
+      width: 90%;
+      overflow: hidden;
+    }
+
+    .it-content h1 {
+      font-size: 20px;
+    }
+    .it-content p {
+      font-size: 14px;
+      width: 80%;
+    }
+    .it-image img{
+      margin-top: -65%;
+      margin-left: 125%;
+      width: 28vw;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    .animation{
+      height: 30vh;
+    }
+
+    .rotate-bottom-right{
+      margin-top: 10%;
+    }
+    .center {
+      position: absolute;
+      top: 25%;
+      left: 60%;
+    }
+    .it{
+      margin-top: -50%;
+      margin-left: 52%;
+      width: 90%;
+      overflow: hidden;
+    }
+
+    .it-content h1 {
+      font-size: 18px;
+    }
+    .it-content p {
+      font-size: 12px;
+      width: 75%;
+    }
+    .it-image img{
+      margin-top: -65%;
+      margin-left: 120%;
+      width: 30vw;
+    }
+  }
+
+  
