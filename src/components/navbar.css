@@ -47,7 +47,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: scroll;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -113,8 +112,10 @@
 
 .nav-image {
   position: absolute;
-  top: -25px; /* Adjust this value as needed to position the image */
-  left: 70%; /* Adjust this value as needed to horizontally center the image */
+  top: -25px;
+  /* Adjust this value as needed to position the image */
+  left: 70%;
+  /* Adjust this value as needed to horizontally center the image */
   transform: translateX(-50%);
   display: none;
   width: 150px;
@@ -155,5 +156,10 @@
   .close-btn {
     top: 2rem;
     right: 3rem;
+  }
+
+  .nav-modal {
+    height: 100%;
+    overflow: scroll;
   }
 }

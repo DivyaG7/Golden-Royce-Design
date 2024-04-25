@@ -37,13 +37,13 @@ export const Navbar = () => {
                                 <ul className="nav-links">
                                     <li><Link to='/' onClick={toggleNav}><span>01</span>Home<img src={home} alt="home-img" className="nav-image" /></Link></li>
                                     <li><Link to='/IT' onClick={toggleNav}><span>02</span>Services<img src={IT} alt="IT-img" className="nav-image" /></Link></li>
-                                    <li><Link to='/services' onClick={toggleNav}><span>03</span>Cybersecurity<img src={cyber} alt="cyber-img" className="nav-image" /></Link></li>
+                                    <li><Link to='/CyberSecurity' onClick={toggleNav}><span>03</span>Cybersecurity<img src={cyber} alt="cyber-img" className="nav-image" /></Link></li>
                                 </ul>
                             </div>
                             <div className="nav-column">
                                 <ul className="nav-links">
-                                    <li><Link to='/services' onClick={toggleNav}><span>04</span>BuzzBee<img src={buzzbee} alt="buzzbee-img" className="nav-image" /></Link></li>
-                                    {/* <li><Link to='/contact' onClick={toggleNav}><span>05</span>Contact<img src='' alt="contact-img" className="nav-image" /></Link></li> */}
+                                    <li><Link to='/BuzzBee' onClick={toggleNav}><span>04</span>BuzzBee<img src={buzzbee} alt="buzzbee-img" className="nav-image" /></Link></li>
+                                    {/* <li><Link to='/Contact' onClick={toggleNav}><span>05</span>Contact<img src='' alt="contact-img" className="nav-image" /></Link></li> */}
                                 </ul>
                             </div>
                         </div>
