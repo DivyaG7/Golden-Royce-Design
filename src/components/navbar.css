@@ -158,4 +158,9 @@
     right: 3rem;
   }
 
+  .nav-image {
+    top: -18px;
+    width: 100px;
+  }
+
 }
