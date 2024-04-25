@@ -107,6 +107,24 @@
   padding: 4rem 4rem;
 }
 
+.nav-links li {
+  position: relative;
+}
+
+.nav-image {
+  position: absolute;
+  top: -25px; /* Adjust this value as needed to position the image */
+  left: 70%; /* Adjust this value as needed to horizontally center the image */
+  transform: translateX(-50%);
+  display: none;
+  width: 150px;
+}
+
+.nav-links li:hover .nav-image {
+  display: block;
+}
+
+
 @media screen and (max-width:1000px) {
   .nav-grid {
     display: flex;
@@ -131,7 +149,7 @@
 @media screen and (max-width:450px) {
   .nav-links li {
     margin-bottom: 10px;
-    padding: 1.5rem;
+    padding: 1.7rem;
   }
 
   .close-btn {
