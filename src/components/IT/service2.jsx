@@ -5,14 +5,14 @@ import service2 from '../../assets/service-2.png'
 
 export const Service2 = () => {
     return (
-        <div className='pt-5' style={{ background: 'white' }}>
+        <div className='pt-2' style={{ background: 'white' }}>
             <div className='m-5 pt-4'>
                 <h1>Other Services</h1>
                 <p className='mt-4'>
                     In the vast landscape of IT, we offer tailored solutions ranging from software development and cloud computing to network infrastructure and IT support. </p>
             </div>
 
-            <div className='service2 p-5'>
+            <div className='service2 p-5 pt-2'>
                 <div className='row'>
                     <div className='col-md-12 col-lg-6'>
                         <div className=''>

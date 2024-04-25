@@ -6,8 +6,8 @@ import '../IT/service1.css'
 
 export const Service1 = () => {
     return (
-        <div className='service mt-5 pt-5 pb-4'>
-            <div className='m-5 pt-4 text-white'>
+        <div className='service pt-4 pb-4'>
+            <div className='m-5 text-white'>
                 <h1>Information Technology Services:</h1>
                 <p className='mt-4'>In the vast landscape of IT, we offer tailored solutions ranging from software development and cloud computing to network infrastructure and IT support.</p>
             </div>
