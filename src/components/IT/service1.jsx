@@ -21,7 +21,7 @@ export const Service1 = () => {
                             </div>
                             <div className='card-body p-4'>
                                 <h4>CLOUD SOLUTION</h4>
-                                <h5>Greater Visibility, Manageability & Flexibility.</h5>
+                                <h5 style={{color: '#01057F'}}>Greater Visibility, Manageability & Flexibility.</h5>
                                 <p className='pb-3' style={{ fontSize: '15px' }}>Leverage the power of the cloud with our
                                     scalable and secure solutions. Transform your
                                     operations, enhance flexibility, and achieve
@@ -36,7 +36,7 @@ export const Service1 = () => {
                             </div>
                             <div className='card-body p-4'>
                                 <h4>COGNITIVE OPERATIONS</h4>
-                                <h5>The performance of some composite
+                                <h5 style={{color: '#01057F'}}>The performance of some composite
                                     cognitive activity</h5>
                                 <p className='pb-3' style={{ fontSize: '15px' }}>Embrace the future with cognitive technologies
                                     that optimize business processes, automate
@@ -52,7 +52,7 @@ export const Service1 = () => {
                             </div>
                             <div className='card-body p-4'>
                                 <h4>CONSULTING SERVICES</h4>
-                                <h5>Strategy, marketing, organization,
+                                <h5 style={{color: '#01057F'}}>Strategy, marketing, organization,
                                     operations, technology</h5>
                                 <p style={{ fontSize: '15px' }}>Navigate the complex IT landscape with our
                                     expert consulting services. From strategy
