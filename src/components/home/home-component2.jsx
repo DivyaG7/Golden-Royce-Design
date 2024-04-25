@@ -5,7 +5,6 @@ import client3 from '../../assets/client3.png'
 import client4 from '../../assets/client4.png'
 import client5 from '../../assets/client5.png'
 import '../home/home-component2.css'
-import VisibilitySensor from 'react-visibility-sensor';
 
 export const Testimonial = () => {
     const [clientInfo, setClientInfo] = useState({ name: 'Name', designation: 'Designation', text: 'Testimonial' });
@@ -16,13 +15,6 @@ export const Testimonial = () => {
 
     const clearClientInfo = () => {
         setClientInfo({ name: 'Name', designation: 'Designation', text: 'Testimonial' });
-    };
-
-    const [isVisible1, setIsVisible1] = useState(false);
-
-
-    const handleChange1 = (visible) => {
-        setIsVisible1(visible);
     };
 
 
@@ -50,39 +42,19 @@ export const Testimonial = () => {
 
                     <div className='d-flex justify-content-center' style={{ width: '100%' }}>
                         <div className="image-container" onMouseOver={() => displayClientInfo('Gopinath', 'CEO - MediTech', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
-                                <div className={isVisible1 ? 'animate-scroll' : ''}>
-                                    <img src={client1} alt="Img 1" className="image"/>
-                                </div>
-                            </VisibilitySensor>
+                            <img src={client1} alt="Img 1" className="image animate-scroll" />
                         </div>
                         <div className="image-container" onMouseOver={() => displayClientInfo('Aravinshakrishnan', 'VISUAL DESIGNER - Infosys', "GRD IT solutions optimized our checkout process, ensuring secure transactions. It's clear that their expertise lies in marrying design with technology")} onMouseOut={clearClientInfo}>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
-                                <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''} >
-                                    <img src={client2} alt="Img 2" className="image" />
-                                </div>
-                            </VisibilitySensor>
+                            <img src={client2} alt="Img 2" className="image animate-scroll-from-bottom" />
                         </div>
                         <div className="image-container" onMouseOver={() => displayClientInfo('Guna', 'FOUNDER - Good Life', "Thanks to the exceptional expertise of their hacking IT service, our company's cybersecurity has been fortified beyond expectations.")} onMouseOut={clearClientInfo}>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
-                                <div className={isVisible1 ? 'animate-scroll' : ''} >
-                                    <img src={client3} alt="Img 3" className="image" />
-                                </div>
-                            </VisibilitySensor>
+                            <img src={client3} alt="Img 3" className="image animate-scroll" />
                         </div>
                         <div className="image-container" onMouseOver={() => displayClientInfo('Sherene', 'PRO - Ranger', "Partnering with GRD was a game-changer for our company. Their design team breathed new life into our branding, giving it a modern and appealing look.")} onMouseOut={clearClientInfo}>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
-                                <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''} >
-                                    <img src={client4} alt="Img 4" className="image" />
-                                </div>
-                            </VisibilitySensor>
+                            <img src={client4} alt="Img 4" className="image animate-scroll-from-bottom" />
                         </div>
                         <div className="image-container" onMouseOver={() => displayClientInfo('Rithish', 'FOUNDER - FarmVilla', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
-                                <div className={isVisible1 ? 'animate-scroll' : ''} >
-                                    <img src={client5} alt="Img 5" className="" />
-                                </div>
-                            </VisibilitySensor>
+                            <img src={client5} alt="Img 5" className="image animate-scroll-from-bottom" />
                         </div>
                     </div>
                 </div>

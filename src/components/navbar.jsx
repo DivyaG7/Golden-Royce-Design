@@ -21,7 +21,9 @@ export const Navbar = () => {
         <nav className="navbar" id='navbar'>
             <div className="container">
                 <div className='navigation'>
-                    <img src={logo} alt='Golden_royce_design' />
+                    <Link to='/' >
+                        <img src={logo} alt='Golden_royce_design' />
+                    </Link>
 
                     <div className='navbar-toggle' onClick={toggleNav}>
                         <div className='bar' id='bar1'></div>
