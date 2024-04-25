@@ -14,8 +14,8 @@ export const Service2 = () => {
 
             <div className='service2 p-5 pt-2'>
                 <div className='row'>
-                    <div className='col-md-12 col-lg-6'>
-                        <div className=''>
+                    <div className='col-md-12 col-lg-8'>
+                        <div className='d-flex justify-content-center align-items-center' style={{flexDirection: 'column'}}>
                             <p style={{color: '#888484'}}><span style={{fontSize: '24px', color: '#01057F'}}><span style={{fontWeight: '700'}}>Data</span> Analytic :</span> Unleash the power of your data with our
                                 advanced analytics solutions. Gain valuable insights, make
                                 informed decisions, and stay ahead in today's data-driven world.
@@ -38,9 +38,9 @@ export const Service2 = () => {
                                 security measures.</p>
                         </div>
                     </div>
-                    <div className='col-md-12 col-lg-6'>
+                    <div className='col-md-12 col-lg-4'>
                         <div className='d-flex justify-content-center align-items-center'>
-                            <img src={service2} alt='img' className='img-fluid w-50'/>
+                            <img src={service2} alt='img' className='img-fluid' style={{width: '70%'}}/>
                         </div>
                     </div>
                 </div>
