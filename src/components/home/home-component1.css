@@ -48,3 +48,19 @@
         padding: 2rem .5rem;
     }
 }
+
+/* Animation */
+
+@keyframes slideRightToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-right-to-left {
+    animation: slideRightToLeft 1s ease-in-out forwards;
+  }
+  

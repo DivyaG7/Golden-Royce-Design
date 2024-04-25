@@ -39,8 +39,8 @@ export const Service2 = () => {
                         </div>
                     </div>
                     <div className='col-md-12 col-lg-4'>
-                        <div className='d-flex justify-content-center align-items-center'>
-                            <img src={service2} alt='img' className='img-fluid' style={{ width: '70%' }} />
+                        <div className='d-flex justify-content-center align-items-center zoom-container'>
+                            <img src={service2} alt='img' className='img-fluid zoom-effect' style={{ width: '70%' }} />
                         </div>
                     </div>
                 </div>
