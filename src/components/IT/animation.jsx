@@ -6,31 +6,33 @@ import animation2 from '../../assets/animation2.png'
 import animation3 from '../../assets/animation3.png'
 import it1 from '../../assets/it1.png'
 
+
 export const Animation = () => {
     const [triggered, setTriggered] = useState(false);
-  const [showImage, setShowImage] = useState(true); // Initially show the image
+    const [showImage, setShowImage] = useState(true); // Initially show the image
 
-  useEffect(() => {
-    // Hide the image after a delay
-    const timer = setTimeout(() => {
-      setShowImage(false);
-    }, 1000); // Adjust the delay as needed to match the duration of your animation
 
-    // Clean up the timer on component unmount
-    return () => clearTimeout(timer);
-  }, []); // Run this effect only once on initial render
+    useEffect(() => {
+        // Hide the image after a delay
+        const timer = setTimeout(() => {
+            setShowImage(false);
+        }, 1000); // Adjust the delay as needed to match the duration of your animation
 
-  const handleClick = () => {
-    setTriggered(true);
-    setShowImage(true);
+        // Clean up the timer on component unmount
+        return () => clearTimeout(timer);
+    }, []); // Run this effect only once on initial render
 
-    setTimeout(() => {
-      setTriggered(false);
-      setTimeout(() => {
-        setShowImage(false);
-      }, 1000); // Delay to hide the image after animation completes
-    }, 1000); // Adjust the delay as needed to allow the animations to reset
-  };
+    const handleClick = () => {
+        setTriggered(true);
+        setShowImage(true);
+
+        setTimeout(() => {
+            setTriggered(false);
+            setTimeout(() => {
+                setShowImage(false);
+            }, 1000); // Delay to hide the image after animation completes
+        }, 1000); // Adjust the delay as needed to allow the animations to reset
+    };
 
 
 
@@ -68,9 +70,9 @@ export const Animation = () => {
                 </div>
                 {showImage && (
                     <CSSTransition in={triggered} appear={true} timeout={1000} classNames="fadeIn">
-                    <div className="col-md-6 it-image">
-                        <img src={it1} alt="it-img" className="img-fluid fadeIn" />
-                    </div>
+                        <div className="col-md-6 it-image">
+                            <img src={it1} alt="it-img" className="img-fluid fadeIn" />
+                        </div>
                     </CSSTransition>
                 )}
             </div>

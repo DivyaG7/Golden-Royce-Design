@@ -1,0 +1,68 @@
+.cyber1{
+    width: 100%;
+    overflow: hidden;
+    background: #00162E;
+    color: white;
+    min-height: 40vh;
+}
+
+.cyber-area{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+
+/* .image-container {
+    position: relative;
+    width: 40%; 
+}
+
+.image {
+    position: absolute;
+    max-width: 60%; 
+}
+
+.ellipse {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shield {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lock {
+    top: 10%;
+    right: 15%;
+    width: 30%;
+}
+
+.right {
+    top: 40%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.bottom {
+    bottom: 10%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+} */

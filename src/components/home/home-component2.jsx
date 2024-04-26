@@ -41,19 +41,19 @@ export const Testimonial = () => {
                     </div>
 
                     <div className='d-flex justify-content-center' style={{ width: '100%' }}>
-                        <div className="image-container" onMouseOver={() => displayClientInfo('Gopinath', 'CEO - MediTech', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
+                        <div className="image-container" id='imageContainer' onMouseOver={() => displayClientInfo('Gopinath', 'CEO - MediTech', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
                             <img src={client1} alt="Img 1" className="image animate-scroll" />
                         </div>
-                        <div className="image-container" onMouseOver={() => displayClientInfo('Aravinshakrishnan', 'VISUAL DESIGNER - Infosys', "GRD IT solutions optimized our checkout process, ensuring secure transactions. It's clear that their expertise lies in marrying design with technology")} onMouseOut={clearClientInfo}>
+                        <div className="image-container" id='imageContainer' onMouseOver={() => displayClientInfo('Aravinshakrishnan', 'VISUAL DESIGNER - Infosys', "GRD IT solutions optimized our checkout process, ensuring secure transactions. It's clear that their expertise lies in marrying design with technology")} onMouseOut={clearClientInfo}>
                             <img src={client2} alt="Img 2" className="image animate-scroll-from-bottom" />
                         </div>
-                        <div className="image-container" onMouseOver={() => displayClientInfo('Guna', 'FOUNDER - Good Life', "Thanks to the exceptional expertise of their hacking IT service, our company's cybersecurity has been fortified beyond expectations.")} onMouseOut={clearClientInfo}>
+                        <div className="image-container" id='imageContainer' onMouseOver={() => displayClientInfo('Guna', 'FOUNDER - Good Life', "Thanks to the exceptional expertise of their hacking IT service, our company's cybersecurity has been fortified beyond expectations.")} onMouseOut={clearClientInfo}>
                             <img src={client3} alt="Img 3" className="image animate-scroll" />
                         </div>
-                        <div className="image-container" onMouseOver={() => displayClientInfo('Sherene', 'PRO - Ranger', "Partnering with GRD was a game-changer for our company. Their design team breathed new life into our branding, giving it a modern and appealing look.")} onMouseOut={clearClientInfo}>
+                        <div className="image-container" id='imageContainer' onMouseOver={() => displayClientInfo('Sherene', 'PRO - Ranger', "Partnering with GRD was a game-changer for our company. Their design team breathed new life into our branding, giving it a modern and appealing look.")} onMouseOut={clearClientInfo}>
                             <img src={client4} alt="Img 4" className="image animate-scroll-from-bottom" />
                         </div>
-                        <div className="image-container" onMouseOver={() => displayClientInfo('Rithish', 'FOUNDER - FarmVilla', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
+                        <div className="image-container" id='imageContainer' onMouseOver={() => displayClientInfo('Rithish', 'FOUNDER - FarmVilla', "GRD played a pivotal role in launching our startup's online presence. Their design team crafted a stunning website that perfectly captured our brand's essence.")} onMouseOut={clearClientInfo}>
                             <img src={client5} alt="Img 5" className="image animate-scroll-from-bottom" />
                         </div>
                     </div>
