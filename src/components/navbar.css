@@ -164,3 +164,8 @@
   }
 
 }
+
+.black-background {
+  background-color: black;
+  /* Add any additional styles for black background navbar */
+}

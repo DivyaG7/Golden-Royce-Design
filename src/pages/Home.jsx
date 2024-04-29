@@ -9,6 +9,8 @@ import { Expertise } from '../components/home/home-component1'
 import { Testimonial } from '../components/home/home-component2'
 import { Contact } from '../components/home/home-component3'
 import VisibilitySensor from 'react-visibility-sensor';
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -81,7 +83,8 @@ export const Home = () => {
                     </div>
                     <div className='col-8 mt-5 home-p'>
                         <p className='animate-scroll-from-bottom1'>We design and build beautiful brands, websites and products for startups and tech companies.</p>
-                        <button className='mt-5 animate-scroll-from-bottom2'>Discover More</button>
+                        <Link to="/ItServicePage">
+                            <button className='mt-5 animate-scroll-from-bottom2'>Discover More</button> </Link>
                     </div>
                 </div>
             </section >

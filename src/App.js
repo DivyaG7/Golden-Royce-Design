@@ -6,6 +6,7 @@ import { Navbar } from './components/navbar';
 import { It } from './pages/It';
 import { CyberSecurity } from './pages/CyberSecurity';
 import { Buzzbee } from './pages/Buzzbee';
+import { ItServicePage } from './pages/ItServicePage';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Route path='/It' element={<It />} />
           <Route path='/CyberSecurity' element={<CyberSecurity />} />
           <Route path='/Buzzbee' element={<Buzzbee />} />
+          <Route path='/ItServicePage' element={<ItServicePage />} />
+          <Route path='/cyberPage' element={<CyberSecurity />} />
+          <Route path='/buzzbeePage' element={<buzzbeePage />} />
         </Routes>
         <Footer />
       </Router>

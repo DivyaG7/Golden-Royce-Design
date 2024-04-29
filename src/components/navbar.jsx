@@ -10,7 +10,7 @@ import buzzbee from '../assets/Buzzbee-page.png'
 
 
 
-export const Navbar = () => {
+export const Navbar = ({ blackBackground }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
@@ -18,7 +18,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="navbar" id='navbar'>
+        <nav className={`navbar ${blackBackground ? 'black-background' : ''}`} id='navbar'>
             <div className="container">
                 <div className='navigation'>
                     <Link to='/' >
