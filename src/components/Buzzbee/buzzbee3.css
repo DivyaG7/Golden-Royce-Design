@@ -1,0 +1,12 @@
+.buzzbee3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.buzz-gif-container img{
+   display: none;
+}
+
+.buzz-gif-container:hover img{
+    display: block;
+}

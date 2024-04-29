@@ -24,7 +24,7 @@ export const Cyber1 = () => {
                 <div className='row pt-5 pb-5'>
                     <div className='col-md-7 col-12 pt-2 pb-3'>
                         <div className='cyber-area ps-5 pe-4 mb-2'>
-                            <VisibilitySensor onChange={handleChange1} partialVisibility>
+                            <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                                 <div className={isVisible1 ? 'animate-slide' : ''}>
                                     <h1 style={{ fontWeight: '400' }}><span style={{ fontWeight: '700' }}>Professional</span> <span style={{ color: '#56E3D2' }}>protection</span> with</h1>
                                     <h1 style={{ fontWeight: '400' }}>reliable <span style={{ fontWeight: '700' }}>services</span></h1>
@@ -44,7 +44,7 @@ export const Cyber1 = () => {
                         <img src={bottom} alt="Bottom" className="image bottom" />
                         <img src={center} alt="Center" className="image center" />
                         <img src={left} alt="Left" className="image left" /> */}
-                        <VisibilitySensor onChange={handleChange1} partialVisibility>
+                        <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                             <div className={isVisible1 ? 'animate-scroll' : ''}>
                                 <img src={cyber} alt="cyber-img" className="image" style={{ width: '350px' }} />
                             </div>

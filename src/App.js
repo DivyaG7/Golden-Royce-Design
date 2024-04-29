@@ -5,6 +5,7 @@ import { Footer } from './components/footer';
 import { Navbar } from './components/navbar';
 import { It } from './pages/It';
 import { CyberSecurity } from './pages/CyberSecurity';
+import { Buzzbee } from './pages/Buzzbee';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/It' element={<It />} />
           <Route path='/CyberSecurity' element={<CyberSecurity />} />
+          <Route path='/Buzzbee' element={<Buzzbee />} />
         </Routes>
         <Footer />
       </Router>

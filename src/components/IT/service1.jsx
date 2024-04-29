@@ -21,7 +21,7 @@ export const Service1 = () => {
     return (
         <div className='service pt-4 pb-4'>
             <div className='m-5 text-white'>
-                <VisibilitySensor onChange={handleChange1} partialVisibility>
+                <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                     <div className={isVisible1 ? 'animate-slide' : ''}>
                         <h1>Information Technology Services:</h1>
                         <p className='mt-4'>In the vast landscape of IT, we offer tailored solutions ranging from software development and cloud computing to network infrastructure and IT support.</p>
@@ -36,7 +36,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service1} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>CLOUD SOLUTION</h4>
@@ -55,7 +55,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service2} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>COGNITIVE OPERATIONS</h4>
@@ -75,7 +75,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service3} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>CONSULTING SERVICES</h4>

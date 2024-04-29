@@ -19,7 +19,7 @@ export const Service2 = () => {
     return (
         <div className='pt-2' style={{ background: 'white' }}>
             <div className='m-5 pt-4'>
-                <VisibilitySensor onChange={handleChange1} partialVisibility>
+                <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                     <div className={isVisible1 ? 'animate-slide' : ''}>
                         <h1>Other Services</h1>
                         <p className='mt-4'>
@@ -31,7 +31,7 @@ export const Service2 = () => {
             <div className='service2 p-5 pt-2'>
                 <div className='row'>
                     <div className='col-md-12 col-lg-8'>
-                        <VisibilitySensor onChange={handleChange2} partialVisibility>
+                        <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
                             <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                 <div className='d-flex justify-content-center align-items-center' style={{ flexDirection: 'column' }}>
                                     <p style={{ color: '#888484' }}><span style={{ fontSize: '24px', color: '#01057F' }}><span style={{ fontWeight: '700' }}>Data</span> Analytic :</span> Unleash the power of your data with our

@@ -47,7 +47,7 @@ export const Home = () => {
                     <div className='hr ms-2'></div>
                 </div>
 
-                <VisibilitySensor onChange={handleChange4} partialVisibility>
+                <VisibilitySensor onChange={handleChange4} partialVisibility={100}>
                     <div className={isVisible4 ? 'animate-slide' : ''}>
                         <div className='mt-5 head-business'>
                             <p className="animate-slide"><span>We</span> Make <span>your Business</span> Beautiful <span>&</span> Smart</p>
@@ -57,19 +57,19 @@ export const Home = () => {
 
                 <div className='row justify-content-center mt-5 home-img'>
                     <div className='col-md-8 col-12 d-flex justify-content-center gap-4' >
-                        <VisibilitySensor onChange={handleChange1} partialVisibility>
+                        <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                             <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''}>
                                 <img src={home1} alt='img' className='img-fluid' />
                             </div>
                         </VisibilitySensor>
 
-                        <VisibilitySensor onChange={handleChange2} partialVisibility>
+                        <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
                             <div className={isVisible2 ? 'animate-scroll' : ''}>
                                 <img src={home2} alt='img' className='img-fluid' />
                             </div>
                         </VisibilitySensor>
 
-                        <VisibilitySensor onChange={handleChange3} partialVisibility>
+                        <VisibilitySensor onChange={handleChange3} partialVisibility={100}>
                             <div className={isVisible3 ? 'animate-scroll-from-bottom' : ''}>
                                 <img src={home3} alt='img' className='img-fluid' />
                             </div>

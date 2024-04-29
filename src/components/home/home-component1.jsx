@@ -32,7 +32,7 @@ export const Expertise = () => {
                     </div>
 
                     <div className='col-md-6 sec-expertise'>
-                        <VisibilitySensor onChange={handleChange1} partialVisibility>
+                        <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                             <div className={isVisible1 ? 'slide-right-to-left' : ''}>
                                 <div className='row gap-4'>
                                     <div className='col-12 d-flex gap-5'>
