@@ -53,7 +53,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75'>
-                                <h6>Digital Media Marketing</h6>
+                                <h5>Digital Media Marketing</h5>
                                 <p>Social Media Marketing, Lead Generation , Content Marketing, Search Engine Marketing, Influencer Marketing, Email / WhatsApp / Text Marketing, Search Engine Optimization</p>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75'>
-                                <h6>Printing & Design</h6>
+                                <h5>Printing & Design</h5>
                                 <p>Brochures & Catalogues Pitch Decks Newsletter Annual Report Company Profile Calendar Design Flyers & Posters</p>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75'>
-                                <h6>Packaging Solution</h6>
+                                <h5>Packaging Solution</h5>
                                 <p>Moduled Packaging Design Product Packaging Design Packaging Label Design Identical Packaging Design Secure Packaging Design Bottle Packaging Design</p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75'>
-                                <h6>proposal, Pitch & Designing</h6>
+                                <h5>proposal, Pitch & Designing</h5>
                                 <p>Business Proposal Pitch Deck Company Profile Annual Report Corporate Presentation Official Documentst</p>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75 '>
-                                <h6>Visual strategies</h6>
+                                <h5>Visual strategies</h5>
                                 <p>Explainer Videos Documentaries Photography Corporate Videos Videography Animation Videos</p>
                             </div>
                         </div>
@@ -143,7 +143,7 @@ export const Buzzbee3 = () => {
                                 <img src={gif1} alt="GIF" className='img-fluid' />
                             </div>
                             <div className='w-75'>
-                                <h6>Content Generation</h6>
+                                <h5>Content Generation</h5>
                                 <p>Website Content Branding Content Social Media Content Translation Copywriting</p>
                             </div>
                         </div>
