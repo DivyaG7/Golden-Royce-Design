@@ -30,7 +30,7 @@ export const Cyber2 = () => {
                 <div className='row'>
                     <div className='col-md-12 col-lg-6'>
                         <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
-                            <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
+                            <div className={isVisible2 ? 'animate-slide' : ''}>
                                 <div className='d-flex justify-content-center align-items-center' style={{ flexDirection: 'column' }}>
                                     <p className='mt-4' style={{ lineHeight: '30px' }}>
                                         We hold ISO/IEC 27001 and ISO 9001 certifications, which guarantees the

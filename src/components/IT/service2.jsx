@@ -32,7 +32,7 @@ export const Service2 = () => {
                 <div className='row'>
                     <div className='col-md-12 col-lg-8'>
                         <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
-                            <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
+                            <div className={isVisible2 ? 'animate-slide' : ''}>
                                 <div className='d-flex justify-content-center align-items-center' style={{ flexDirection: 'column' }}>
                                     <p style={{ color: '#888484' }}><span style={{ fontSize: '24px', color: '#01057F' }}><span style={{ fontWeight: '700' }}>Data</span> Analytic :</span> Unleash the power of your data with our
                                         advanced analytics solutions. Gain valuable insights, make
