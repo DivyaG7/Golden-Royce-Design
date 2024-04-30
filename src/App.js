@@ -7,6 +7,8 @@ import { It } from './pages/It';
 import { CyberSecurity } from './pages/CyberSecurity';
 import { Buzzbee } from './pages/Buzzbee';
 import { ItServicePage } from './pages/ItServicePage';
+import { BuzzBeeLanding } from './pages/BuzzBeeLanding';
+import { CyberSecurityLanding } from './pages/CyberSecurityLanding';
 
 
 
@@ -21,6 +23,8 @@ function App() {
           <Route path='/CyberSecurity' element={<CyberSecurity />} />
           <Route path='/Buzzbee' element={<Buzzbee />} />
           <Route path='/ItServicePage' element={<ItServicePage />} />
+          <Route path='/BuzzBeeLanding' element={<BuzzBeeLanding />} />
+          <Route path='/CyberSecurityLanding' element={<CyberSecurityLanding />} />
         </Routes>
         <Footer />
       </Router>
