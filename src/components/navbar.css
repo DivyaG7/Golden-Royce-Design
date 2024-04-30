@@ -151,6 +151,7 @@
   .nav-links li {
     margin-bottom: 10px;
     padding: 1.7rem;
+    padding-left: 3px;
   }
 
   .close-btn {
