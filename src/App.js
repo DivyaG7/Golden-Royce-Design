@@ -7,8 +7,8 @@ import { It } from './pages/It';
 import { CyberSecurity } from './pages/CyberSecurity';
 import { Buzzbee } from './pages/Buzzbee';
 import { ItServicePage } from './pages/ItServicePage';
-import { CyberPage } from './pages/CyberPage';
-import { BuzzbeePage } from './pages/BuzzbeePage';
+
+
 
 function App() {
   return (
@@ -21,8 +21,6 @@ function App() {
           <Route path='/CyberSecurity' element={<CyberSecurity />} />
           <Route path='/Buzzbee' element={<Buzzbee />} />
           <Route path='/ItServicePage' element={<ItServicePage />} />
-          <Route path='/CyberPage' element={<CyberPage />} />
-          <Route path='/BuzzbeePage' element={<BuzzbeePage />} />
         </Routes>
         <Footer />
       </Router>
