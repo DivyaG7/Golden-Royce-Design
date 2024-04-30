@@ -4,7 +4,7 @@ import '../Cyber/cyber-service.css'
 export const CyberService = () => {
     return (
         <div>
-            <div className='cyber-service'>
+            <div className='cyber-service' id='managedServices'>
                 <div className='row'>
                     <div className='col-md-6 p-5' style={{ color: 'white', background: '#0C6C69' }}>
                         <div className='d-flex justify-content-left align-items-center gap-2'>

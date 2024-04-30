@@ -22,6 +22,11 @@ export const Buzzbee1 = () => {
         image.style.transform = ''; // Reset the transform property
     };
 
+    const handleButtonClick = () => {
+        const nextSection = document.getElementById('buzzbeecomponent');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      };
+
     return (
         <div>
             <div className='buzzbee mt-2' style={{ background: '#FFC704' }}>
@@ -30,7 +35,7 @@ export const Buzzbee1 = () => {
                         <h1 className='ps-3'><span style={{fontWeight: 'bold'}}>Buzz</span> Bee</h1>
                         <p className='mt-3 ps-3'>We design and build beautiful brands, websites and
                             products for startups and tech companies.</p>
-                        <button className='mt-3 pt-1 pb-1 mb-5' style={{ width: '120px', border: 'none', borderRadius: '20px', background: 'black', color: 'white' }}>Explore</button>
+                        <button className='mt-3 pt-1 pb-1 mb-5' style={{ width: '120px', border: 'none', borderRadius: '20px', background: 'black', color: 'white' }} onClick={handleButtonClick} >Explore</button>
 
                         <div className='mt-5 pt-5 ps-3 pb-4' style={{ background: 'black', color: 'white', borderRadius: '20px' }}>
                             <p>We are a dynamic and innovative company

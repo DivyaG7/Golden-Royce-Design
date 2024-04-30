@@ -39,11 +39,11 @@ export const Footer = () => {
                             </span></h3>
                             <p className='text-center mt-5' style={{ fontWeight: '500' }}>Do you have a project in mind, that you feel our
                                 approach would work well for</p>
-                            <form>
+                            {/* <form>
                                 <div className="mb-3 mt-3">
                                     <input type="email" className="form-control" id="email" placeholder='Enter your email address' style={{border: '2px solid gray'}} />
                                 </div>
-                            </form>
+                            </form> */}
                         </div>
                         <div className='col-md-4 mb-2' id='foot3'>
                             <div className='button gap-2'>

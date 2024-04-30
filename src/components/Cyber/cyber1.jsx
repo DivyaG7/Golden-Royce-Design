@@ -18,6 +18,12 @@ export const Cyber1 = () => {
     const handleChange1 = (visible) => {
         setIsVisible1(visible);
     };
+
+    const handleButtonClick = () => {
+        const nextSection = document.getElementById('managedServices');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      };
+    
     return (
         <div>
             <div className='cyber1 p-2 pt-4 pb-4'>
@@ -31,7 +37,7 @@ export const Cyber1 = () => {
                                     <p className='mt-3'>Proactively identify threats to your digital infrastructure so you
                                         can minimise damage, reduce costs and financial losses, and prevent
                                         future attacks in an ever-evolving landscape.</p>
-                                    <button className='mt-3 pt-1 pb-1' style={{ width: '100px', border: 'none', borderRadius: '20px', background: '#58DB77' }}>EXPLORE</button>
+                                    <button className='mt-3 pt-1 pb-1' style={{ width: '100px', border: 'none', borderRadius: '20px', background: '#58DB77' }} onClick={handleButtonClick} >EXPLORE</button>
                                 </div>
                             </VisibilitySensor>
                         </div>

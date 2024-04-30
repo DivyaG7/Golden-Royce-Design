@@ -18,7 +18,7 @@ export const Buzzbee2 = () => {
 
 
     return (
-        <div className='buzz-com2'>
+        <div className='buzz-com2' id='buzzbeecomponent'>
 
             <div className="d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
                 <div
