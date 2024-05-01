@@ -66,3 +66,48 @@
     left: -10%;
     transform: translateY(-50%);
 } */
+
+
+.img_container{
+    position: relative;
+}
+.sheild-container{
+    position: relative;
+    top:20%
+}
+
+.lock{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    max-height: 150px;
+
+}
+.vector_group{
+    position: absolute;
+    bottom: 72%;
+    left: 56%;
+
+}
+.ellipse{
+    position: absolute;
+    top: 48%;
+}
+
+.bottom{
+    position: absolute;
+    top: 54%;
+    left: 20%;
+}
+
+.left{
+    position: absolute;
+    bottom: 38%;
+    right: 85%;
+}
+
+.center{
+    position: absolute;
+    top: 45%;
+    left: 80%;
+}
