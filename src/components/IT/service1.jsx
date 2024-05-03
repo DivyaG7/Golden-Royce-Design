@@ -8,15 +8,20 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 export const Service1 = () => {
     const [isVisible1, setIsVisible1] = useState(false);
-    const [isVisible2, setIsVisible2] = useState(false);
+    // const [isVisible2, setIsVisible2] = useState(false);
+    // const [isVisible3, setIsVisible3] = useState(false);
 
     const handleChange1 = (visible) => {
         setIsVisible1(visible);
     };
 
-    const handleChange2 = (visible) => {
-        setIsVisible2(visible);
-    };
+    // const handleChange2 = (visible) => {
+    //     setIsVisible2(visible);
+    // };
+
+    // const handleChange3 = (visible) => {
+    //     setIsVisible3(visible);
+    // };
 
     return (
         <div className='service pt-4 pb-4'>
@@ -36,8 +41,8 @@ export const Service1 = () => {
                             <div>
                                 <img src={service1} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
-                                <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
+                            {/* <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
+                                <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}> */}
                                     <div className='card-body p-4'>
                                         <h4>CLOUD SOLUTION</h4>
                                         <h5 style={{ color: '#01057F' }}>Greater Visibility, Manageability & Flexibility.</h5>
@@ -46,8 +51,8 @@ export const Service1 = () => {
                                             operations, enhance flexibility, and achieve
                                             unparalleled business agility</p>
                                     </div>
-                                </div>
-                            </VisibilitySensor>
+                                {/* </div>
+                            </VisibilitySensor> */}
                         </div>
                     </div>
                     <div className='col-md-4'>
@@ -55,8 +60,8 @@ export const Service1 = () => {
                             <div>
                                 <img src={service2} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
-                                <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
+                            {/* <VisibilitySensor onChange={handleChange3} partialVisibility={100}>
+                                <div className={isVisible3 ? 'animate-scroll-from-bottom' : ''}> */}
                                     <div className='card-body p-4'>
                                         <h4>COGNITIVE OPERATIONS</h4>
                                         <h5 style={{ color: '#01057F' }}>The performance of some composite
@@ -66,8 +71,8 @@ export const Service1 = () => {
                                             routine tasks, and unlock new levels of
                                             operational excellence.</p>
                                     </div>
-                                </div>
-                            </VisibilitySensor>
+                                {/* </div>
+                            </VisibilitySensor> */}
                         </div>
                     </div>
                     <div className='col-md-4'>
@@ -75,8 +80,8 @@ export const Service1 = () => {
                             <div>
                                 <img src={service3} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
-                                <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
+                            {/* <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
+                                <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}> */}
                                     <div className='card-body p-4'>
                                         <h4>CONSULTING SERVICES</h4>
                                         <h5 style={{ color: '#01057F' }}>Strategy, marketing, organization,
@@ -88,8 +93,8 @@ export const Service1 = () => {
                                             business success.
                                         </p>
                                     </div>
-                                </div>
-                            </VisibilitySensor>
+                                {/* </div>
+                            </VisibilitySensor> */}
                         </div>
                     </div>
                 </div>
