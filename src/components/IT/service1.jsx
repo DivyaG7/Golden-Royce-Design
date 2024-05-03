@@ -36,7 +36,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service1} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>CLOUD SOLUTION</h4>
@@ -55,7 +55,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service2} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>COGNITIVE OPERATIONS</h4>
@@ -75,7 +75,7 @@ export const Service1 = () => {
                             <div>
                                 <img src={service3} alt='service-img' className='img-fluid w-100' />
                             </div>
-                            <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
+                            <VisibilitySensor onChange={handleChange2} partialVisibility={30}>
                                 <div className={isVisible2 ? 'animate-scroll-from-bottom' : ''}>
                                     <div className='card-body p-4'>
                                         <h4>CONSULTING SERVICES</h4>
