@@ -37,7 +37,7 @@ export const Buzzbee1 = () => {
                             products for startups and tech companies.</p>
                         <button className='mt-3 pt-1 pb-1 mb-5' style={{ width: '120px', border: 'none', borderRadius: '20px', background: 'black', color: 'white' }} onClick={handleButtonClick} >Explore</button>
 
-                        <div className='mt-5 pt-5 ps-3 pb-4' style={{ background: 'black', color: 'white', borderRadius: '20px' }}>
+                        <div className='mt-5 pt-5 ps-3 pb-4 buzz-first-comp-cont' style={{ background: 'black', color: 'white', borderRadius: '20px' }}>
                             <p>We are a dynamic and innovative company
                                 specializing in three key verticals:</p>
                             <p style={{ fontSize: '12px' }}>

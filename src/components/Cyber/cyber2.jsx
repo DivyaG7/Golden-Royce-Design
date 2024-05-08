@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Compilance from '../../assets/compilance.png'
 import VisibilitySensor from 'react-visibility-sensor';
+import '../../components/Cyber/cyber2.css'
 
 
 export const Cyber2 = () => {
@@ -17,7 +18,7 @@ export const Cyber2 = () => {
 
     return (
         <div style={{ background: 'white' }}>
-            <div className='m-5'>
+            <div className='m-5 cyber-sec-comp'>
                 <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
                     <div className={isVisible1 ? 'animate-slide' : ''}>
                         <h1>Compilance</h1>
@@ -26,7 +27,7 @@ export const Cyber2 = () => {
                 </VisibilitySensor>
             </div>
 
-            <div className='cyber2 p-5 pt-0'>
+            <div className='cyber2 p-5 pt-0 cyber-sec-comp1'>
                 <div className='row'>
                     <div className='col-md-12 col-lg-6'>
                         <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
