@@ -1,6 +1,13 @@
 import React from 'react'
-import gif1 from '../../assets/gif1.gif'
 import '../Buzzbee/buzzbee3.css'
+import gif1 from '../../assets/gif1.gif';
+import gif2 from '../../assets/gif2.gif';
+import gif3 from '../../assets/gif3.gif';
+import gif4 from '../../assets/gif4.gif';
+import gif5 from '../../assets/gif5.gif';
+import gif6 from '../../assets/gif6.gif';
+// import gif7 from '../../assets/gif7.gif';
+import gif8 from '../../assets/gif8.gif';
 
 export const Buzzbee3 = () => {
 
@@ -13,8 +20,8 @@ export const Buzzbee3 = () => {
                     </div>
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
-                            <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                            <div className='w-25'>
+                                <img src={gif1} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Branding Strategy Services</h5>
@@ -32,7 +39,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif2} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Advertising Solutions</h5>
@@ -50,7 +57,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif3} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Digital Media Marketing</h5>
@@ -68,7 +75,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif4} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Printing & Design</h5>
@@ -86,7 +93,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif5} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Packaging Solution</h5>
@@ -104,7 +111,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif6} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>proposal, Pitch & Designing</h5>
@@ -122,7 +129,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif8} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75 '>
                                 <h5>Visual strategies</h5>
@@ -140,7 +147,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25'>
-                                <img src={gif1} alt="GIF" className='img-fluid' />
+                                <img src={gif8} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75'>
                                 <h5>Content Generation</h5>
