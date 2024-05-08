@@ -17,4 +17,8 @@
     .landingImg{
         width: 70% !important;
     }
+    .circle {
+       width: 15px;
+       height: 15px;
+    }
 }
