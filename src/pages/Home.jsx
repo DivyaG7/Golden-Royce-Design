@@ -6,7 +6,7 @@ import home2 from '../assets/home2.png'
 import home3 from '../assets/home3.png'
 import home4 from '../assets/home4.png'
 import { Expertise } from '../components/home/home-component1'
-import { Testimonial } from '../components/home/home-component2'
+// import { Testimonial } from '../components/home/home-component2'
 import { Contact } from '../components/home/home-component3'
 import VisibilitySensor from 'react-visibility-sensor';
 import { Link } from 'react-router-dom'
@@ -93,9 +93,9 @@ export const Home = () => {
                 <Expertise />
             </section>
 
-            <section>
+            {/* <section>
                 <Testimonial />
-            </section>
+            </section> */}
 
             <section>
                 <Contact />
