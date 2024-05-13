@@ -55,16 +55,16 @@ export const Footer = () => {
                                 <p>Connect With us</p>
                                 <div className="d-flex gap-2">
                                     <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faFacebookF} size="x" />
+                                        <FontAwesomeIcon icon={faFacebookF} size="1x" />
                                     </div>
                                     <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faTwitter} size="x" />
+                                        <FontAwesomeIcon icon={faTwitter} size="1x" />
                                     </div>
                                     <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faLinkedinIn} size="x" />
+                                        <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
                                     </div>
                                     <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faInstagram} size="x" />
+                                        <FontAwesomeIcon icon={faInstagram} size="1x" />
                                     </div>
                                 </div>
                             </div>
