@@ -154,10 +154,10 @@
     .center {
       position: absolute;
       top: 40%;
-      left: 58%;
+      left: 50%;
     }
     .it{
-      margin-top: -55%;
+      margin-top: -45%;
       margin-left: 55%;
     }
     .it-content h1 {
@@ -167,7 +167,7 @@
       font-size: 22px;
     }
     .it-image img{
-      margin-top: -130%;
+      margin-top: -100%;
       margin-left: 230%;
       width: 33vw;
     }
@@ -243,7 +243,7 @@
     }
     .center {
       position: absolute;
-      top: 25%;
+      top: 25% !important;
       left: 60%;
     }
     .it{
