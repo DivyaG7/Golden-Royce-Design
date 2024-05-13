@@ -72,7 +72,7 @@ export const Home = () => {
                         </VisibilitySensor>
 
                         <VisibilitySensor onChange={handleChange3} partialVisibility={100}>
-                            <div className={isVisible3 ? 'animate-scroll-from-bottom' : ''}>
+                            <div className={isVisible3 ? 'animate-scroll-from-bottom1' : ''}>
                                 <img src={home3} alt='img' className='img-fluid' />
                             </div>
                         </VisibilitySensor>

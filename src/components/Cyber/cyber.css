@@ -111,3 +111,17 @@
     top: 45%;
     left: 80%;
 }
+
+
+@keyframes scrollFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animateScroll {
+    animation: scrollFromTop 1s ease forwards;
+  }

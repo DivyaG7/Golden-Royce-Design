@@ -14,10 +14,43 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 export const Cyber1 = () => {
     const [isVisible1, setIsVisible1] = useState(false);
+    // const [isVisibleShield, setIsVisibleShield] = useState(false);
+    const [isVisibleLock, setIsVisibleLock] = useState(false);
+    const [isVisibleVector, setIsVisibleVector] = useState(false);
+    // const [isVisibleBottom, setIsVisibleBottom] = useState(false);
+    const [isVisibleCenter, setIsVisibleCenter] = useState(false);
+    const [isVisibleLeft, setIsVisibleLeft] = useState(false);
+
 
     const handleChange1 = (visible) => {
         setIsVisible1(visible);
     };
+
+
+    // const handleChangeShield = (isVisible) => {
+    //     setIsVisibleShield(isVisible);
+    // };
+
+    const handleChangeLock = (isVisible) => {
+        setIsVisibleLock(isVisible);
+    };
+
+    const handleChangeVector = (isVisible) => {
+        setIsVisibleVector(isVisible);
+    };
+
+    // const handleChangeBottom = (isVisible) => {
+    //     setIsVisibleBottom(isVisible);
+    // };
+
+    const handleChangeCenter = (isVisible) => {
+        setIsVisibleCenter(isVisible);
+    };
+
+    const handleChangeLeft = (isVisible) => {
+        setIsVisibleLeft(isVisible);
+    };
+
 
     const handleButtonClick = () => {
         const nextSection = document.getElementById('managedServices');
@@ -56,58 +89,57 @@ export const Cyber1 = () => {
                             </div>
                         </VisibilitySensor> */}
 
-                        <div flex="40" class="img_container">
-                            <div class="sheild-container">
-                                <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                    <div className={isVisible1 ? 'animate-scroll' : ''}>
+                        <div flex="40" className="img_container">
+                            <div className="sheild-container">
+                                {/* <VisibilitySensor onChange={handleChangeShield} partialVisibility={100}>
+                                    <div className={isVisibleShield ? 'animateScroll' : ''}> */}
                                         <img src={sheild} className="sheild img-fluid" alt='img' />
-                                    </div>
-                                </VisibilitySensor>
+                                    {/* </div>
+                                </VisibilitySensor> */}
 
-                                <div class="lock">
-                                    <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                        <div className={isVisible1 ? 'slide-right-to-left' : ''}>
+                                <div className="lock">
+                                    <VisibilitySensor onChange={handleChangeLock} partialVisibility={100}>
+                                        <div className={isVisibleLock ? 'slide-right-to-left' : ''}>
                                             <img src={lock} className="img-fluid" alt='img' />
                                         </div>
                                     </VisibilitySensor>
                                 </div>
 
-                                <div class="ellipse">
+                                <div className="ellipse">
                                     <img src={ellipse} className="img-fluid" alt='img' />
                                 </div>
 
-                                <div class="vector_group">
-                                    <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                        <div className={isVisible1 ? 'slide-right-to-left' : ''}>
+                                <div className="vector_group">
+                                    <VisibilitySensor onChange={handleChangeVector} partialVisibility={100}>
+                                        <div className={isVisibleVector ? 'slide-right-to-left' : ''}>
                                             <img src={right} className="img-fluid" alt='img' />
                                         </div>
                                     </VisibilitySensor>
                                 </div>
 
-                                <div class="bottom">
-                                    <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                        <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''}>
+                                <div className="bottom">
+                                    {/* <VisibilitySensor onChange={handleChangeBottom} partialVisibility={100}>
+                                        <div className={isVisibleBottom ? 'animate-scroll-from-bottom' : ''}> */}
                                             <img src={bottom} className="img-fluid" alt='img' />
-                                        </div>
-                                    </VisibilitySensor>
+                                        {/* </div>
+                                    </VisibilitySensor> */}
                                 </div>
 
-                                <div class="center">
-                                    <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                        <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''}>
+                                <div className="center">
+                                    <VisibilitySensor onChange={handleChangeCenter} partialVisibility={100}>
+                                        <div className={isVisibleCenter ? 'animate-scroll-from-bottom' : ''}>
                                             <img src={center} className="img-fluid" alt='img' />
                                         </div>
                                     </VisibilitySensor>
                                 </div>
 
-                                <div class="left">
-                                    <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                                        <div className={isVisible1 ? 'animate-slide' : ''}>
+                                <div className="left">
+                                    <VisibilitySensor onChange={handleChangeLeft} partialVisibility={100}>
+                                        <div className={isVisibleLeft ? 'animate-slide' : ''}>
                                             <img src={left} className="img-fluid" alt='img' />
                                         </div>
                                     </VisibilitySensor>
                                 </div>
-
                             </div>
                         </div>
 
