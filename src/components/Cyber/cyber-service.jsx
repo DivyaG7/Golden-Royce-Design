@@ -27,19 +27,19 @@ export const CyberService = () => {
                                     <h3 style={{fontWeight: '700'}}>Infra VA/PT</h3>
                                     <ul className='mt-3' style={{ display: 'flex', flexDirection: 'column', gap: '10px', color: '#474747', listStyle: 'none', marginLeft: '-30px' }}>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Host level VA/PT Audit</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>IOT VA/PT Audit</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Wireless VA/PT Audit</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Infra VA/PT Audit</li>
                                         </div>
                                     </ul>
@@ -48,19 +48,19 @@ export const CyberService = () => {
                                     <h3 style={{fontWeight: '700'}}>Other VA/PT</h3>
                                     <ul className='mt-3' style={{ display: 'flex', flexDirection: 'column', gap: '10px', color: '#474747', listStyle: 'none', marginLeft: '-30px' }}>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Cyber Intelligence</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Vulnerability Audit</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Cloud VA/PT Audit</li>
                                         </div>
                                         <div className='d-flex gap-2'>
-                                            <i class="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                            <i className="fa fa-caret-right" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                             <li>Cyber forensics Audit</li>
                                         </div>
                                     </ul>
@@ -68,7 +68,7 @@ export const CyberService = () => {
                             </div>
                             <div className='border-bottom pt-3'></div>
                             <div className='d-flex gap-2'>
-                                <i class="fa fa-caret-right mt-4" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
+                                <i className="fa fa-caret-right mt-4" style={{ fontSize: '24px', color: '#0C6C69' }}></i>
                                 <p className='mt-4' style={{color: '#474747'}}>Guard spot and vanquish cyber threat with our
                                     advanced VA/PT services.  Elevate your security
                                     with our streamlines  effective defence

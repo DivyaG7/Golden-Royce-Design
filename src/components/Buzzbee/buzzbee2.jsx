@@ -30,14 +30,14 @@ export const Buzzbee2 = () => {
                 </div>
                 <div
                     className="imgcontainer w-25"
-                    onMouseOver={() => displayImageName('Branding')}
+                    onMouseOver={() => displayImageName('Inspired Branding')}
                     onMouseOut={clearImageName}
                 >
                     <img src={buzz2} alt="Imge 2" className="buzzImg img-fluid w-100" />
                 </div>
                 <div
                     className="imgcontainer w-25"
-                    onMouseOver={() => displayImageName('Advertisemet')}
+                    onMouseOver={() => displayImageName('Advertisement')}
                     onMouseOut={clearImageName}
                 >
                     <img src={buzz3} alt="Imge 3" className="buzzImg img-fluid w-100" />
