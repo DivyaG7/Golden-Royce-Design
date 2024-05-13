@@ -15,22 +15,22 @@ import { Link } from 'react-router-dom'
 
 
 export const Home = () => {
-    const [isVisible1, setIsVisible1] = useState(false);
-    const [isVisible2, setIsVisible2] = useState(false);
-    const [isVisible3, setIsVisible3] = useState(false);
+    // const [isVisible1, setIsVisible1] = useState(false);
+    // const [isVisible2, setIsVisible2] = useState(false);
+    // const [isVisible3, setIsVisible3] = useState(false);
     const [isVisible4, setIsVisible4] = useState(false);
 
-    const handleChange1 = (visible) => {
-        setIsVisible1(visible);
-    };
+    // const handleChange1 = (visible) => {
+    //     setIsVisible1(visible);
+    // };
 
-    const handleChange2 = (visible) => {
-        setIsVisible2(visible);
-    };
+    // const handleChange2 = (visible) => {
+    //     setIsVisible2(visible);
+    // };
 
-    const handleChange3 = (visible) => {
-        setIsVisible3(visible);
-    };
+    // const handleChange3 = (visible) => {
+    //     setIsVisible3(visible);
+    // };
 
     const handleChange4 = (visible) => {
         setIsVisible4(visible);
@@ -59,23 +59,28 @@ export const Home = () => {
 
                 <div className='row justify-content-center mt-5 home-img'>
                     <div className='col-md-8 col-12 d-flex justify-content-center gap-4' >
-                        <VisibilitySensor onChange={handleChange1} partialVisibility={100}>
-                            <div className={isVisible1 ? 'animate-scroll-from-bottom' : ''}>
-                                <img src={home1} alt='img' className='img-fluid' />
+                        
+                            <div className= 'animate-scroll-from-bottom'>
+                                <Link to="/Buzzbee">
+                                    <img src={home1} alt='img' className='img-fluid' />
+                                </Link>
                             </div>
-                        </VisibilitySensor>
 
-                        <VisibilitySensor onChange={handleChange2} partialVisibility={100}>
-                            <div className={isVisible2 ? 'animate-scroll' : ''}>
-                                <img src={home2} alt='img' className='img-fluid' />
+                        
+                            <div className='animate-scroll'>
+                                <Link to="/CyberSecurity">
+                                    <img src={home2} alt='img' className='img-fluid' />
+                                </Link>
                             </div>
-                        </VisibilitySensor>
+                        
 
-                        <VisibilitySensor onChange={handleChange3} partialVisibility={100}>
-                            <div className={isVisible3 ? 'animate-scroll-from-bottom1' : ''}>
-                                <img src={home3} alt='img' className='img-fluid' />
+                        
+                            <div className='animate-scroll-from-bottom1'>
+                                <Link to="/It">
+                                    <img src={home3} alt='img' className='img-fluid' />
+                                </Link>
                             </div>
-                        </VisibilitySensor>
+                        
 
                     </div>
                     <div className='col-8 dot-img mt-5'>
