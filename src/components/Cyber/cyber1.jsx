@@ -91,11 +91,11 @@ export const Cyber1 = () => {
 
                         <div flex="40" className="img_container">
                             <div className="sheild-container">
-                                {/* <VisibilitySensor onChange={handleChangeShield} partialVisibility={100}>
-                                    <div className={isVisibleShield ? 'animateScroll' : ''}> */}
+                                
+                                    <div className='animateScroll'> 
                                         <img src={sheild} className="sheild img-fluid" alt='img' />
-                                    {/* </div>
-                                </VisibilitySensor> */}
+                                    </div>
+                                
 
                                 <div className="lock">
                                     <VisibilitySensor onChange={handleChangeLock} partialVisibility={100}>
@@ -118,11 +118,11 @@ export const Cyber1 = () => {
                                 </div>
 
                                 <div className="bottom">
-                                    {/* <VisibilitySensor onChange={handleChangeBottom} partialVisibility={100}>
-                                        <div className={isVisibleBottom ? 'animate-scroll-from-bottom' : ''}> */}
+                                    
+                                        <div className='animate-scroll-from-bottom'>
                                             <img src={bottom} className="img-fluid" alt='img' />
-                                        {/* </div>
-                                    </VisibilitySensor> */}
+                                        </div>
+                                   
                                 </div>
 
                                 <div className="center">
