@@ -6,7 +6,7 @@ import gif3 from '../../assets/gif3.gif';
 import gif4 from '../../assets/gif4.gif';
 import gif5 from '../../assets/gif5.gif';
 import gif6 from '../../assets/gif6.gif';
-// import gif7 from '../../assets/gif7.gif';
+import gif7 from '../../assets/gif7.gif';
 import gif8 from '../../assets/gif8.gif';
 
 export const Buzzbee3 = () => {
@@ -129,7 +129,7 @@ export const Buzzbee3 = () => {
                     <div className='col-md-9 col-12'>
                         <div className='d-flex justify-content-around align-items-center gap-5 buzz-gif-container p-3 w-100'>
                             <div className=' w-25 buzz-gif-img'>
-                                <img src={gif8} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
+                                <img src={gif7} alt="GIF" className='img-fluid' style={{borderRadius: '10px'}}/>
                             </div>
                             <div className='w-75 buzz-gif-cont'>
                                 <h5 style={{color: 'black'}}>Visual strategies</h5>
