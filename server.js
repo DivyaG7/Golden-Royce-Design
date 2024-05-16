@@ -17,7 +17,7 @@ app.use(express.json())
 
 
 // Connect to MongoDB using the connection string from the environment variable
-mongoose.connect('url', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("Connected to MongoDB");
   })
