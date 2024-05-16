@@ -91,18 +91,14 @@ export const Cyber1 = () => {
 
                         <div flex="40" className="img_container">
                             <div className="sheild-container">
-                                
                                     <div className='animateScroll'> 
                                         <img src={sheild} className="sheild img-fluid" alt='img' />
                                     </div>
-                                
 
                                 <div className="lock">
-                                    
                                         <div className='slide-right-to-left'>
                                             <img src={lock} className="img-fluid" alt='img' />
                                         </div>
-                    
                                 </div>
 
                                 <div className="ellipse">
