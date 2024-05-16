@@ -34,7 +34,7 @@ connection.once('open',() => {
 })
 
 
-app.post('/form',(req,res) => {
+app.post('api/form',(req,res) => {
     const{name,email} = req.body;
     const formData = new form({name,email});
 
