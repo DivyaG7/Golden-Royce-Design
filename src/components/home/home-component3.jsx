@@ -54,7 +54,7 @@ export const Contact = () => {
                         <h2>hear from </h2>
                         <h2>us when </h2>
                         <h2>it matters.</h2>
-                        <form className='mt-3' onSubmit={handleSubmit}>
+                        <form className='mt-3' onSubmit={handleSubmit} action='/form'>
                             <div className="mb-3 mt-5">
                                 <input type="text" className="form-control text-center" id="name" placeholder='Name' style={{ borderRadius: '20px', border: '1px solid black' }} value={formData.name} onChange={handleChange} />
                             </div>
@@ -68,7 +68,7 @@ export const Contact = () => {
                     <div className="col-12 col-md-6 p-5 ms-5" style={{ background: 'white' }} id="column3">
                         <h2>You’ll only hear from </h2>
                         <h2>us when it matters.</h2>
-                        <form className='mt-3' onSubmit={handleSubmit} >
+                        <form className='mt-3' onSubmit={handleSubmit} action='/form'>
                             <div className="mb-3 mt-5">
                                 <input type="text" className="form-control text-center" id="name" placeholder='Name' style={{ borderRadius: '20px', border: '1px solid black' }} value={formData.name} onChange={handleChange} />
                             </div>
