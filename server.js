@@ -1,46 +1,48 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors')
-require('dotenv').config();
+import mongoose from 'mongoose';
 
-const form = require('./modals/form.modal')
+// Define your Mongoose schema
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: String
+});
 
+let User;
 
-const app = express();
+// Initialize the Mongoose model
+try {
+  // Use an existing Mongoose model if available
+  User = mongoose.model('User');
+} catch {
+  // Create a new Mongoose model if not available
+  User = mongoose.model('User', userSchema);
+}
 
-const url = process.env.ATLAS_URL;
+// Connect to MongoDB Atlas using environment variable
+const atlasUrl = process.env.ATLAS_URL;
 
+mongoose.connect(atlasUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('Error connecting to MongoDB:', err));
 
-app.use(cors())
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const formData = req.body;
 
-app.use(express.json())
+    try {
+      // Create a new user document
+      const newUser = new User(formData);
 
+      // Save the user document to the database
+      await newUser.save();
 
-// Connect to MongoDB using the connection string from the environment variable
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
-    console.error("Error connecting to MongoDB:", err);
-  });
-
-
-
-const connection = mongoose.connection;
-
-connection.once('open',() => {
-    console.log("database connected!")
-})
-
-
-app.post('/form',(req,res) => {
-    const{name,email} = req.body;
-    const formData = new form({name,email});
-
-    formData.save();
-})
-
-app.listen('8001', () => {
-    console.log("app running on port 8001")
-})
+      res.status(201).json({ message: 'User data stored successfully' });
+    } catch (error) {
+      console.error('Error storing user data:', error);
+      res.status(500).json({ message: 'Error storing user data' });
+    }
+  } else {
+    res.status(405).json({ message: 'Method Not Allowed' });
+  }
+}
