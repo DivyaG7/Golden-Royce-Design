@@ -20,7 +20,6 @@ export const Contact = () => {
         e.preventDefault();
     
         try {
-          // Submit form data to the serverless function
           const response = await fetch('/api/submitFormData', {
             method: 'POST',
             headers: {
@@ -31,7 +30,6 @@ export const Contact = () => {
     
           if (response.ok) {
             console.log('Form data submitted successfully');
-            // Reset form fields after successful submission
             setFormData({ name: '', email: '' });
           } else {
             console.error('Failed to submit form data:', response.statusText);
