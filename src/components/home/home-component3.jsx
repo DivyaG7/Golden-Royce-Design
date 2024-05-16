@@ -18,15 +18,19 @@ export const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData);
-        axios.post('http://localhost:8001/form', formData)
-            .then((res) => {
-                console.log(res);
-                // Reset form data
+        console.log("Form Data Before Submit:", formData);
+        try {
+            const res = await axios.post('http://localhost:8001/form', formData);
+            console.log("Response from Server:", res);
+            // Delay resetting the form state to ensure the event processing is complete
+            setTimeout(() => {
                 setFormData({ name: '', email: '' });
-            })
-            .catch(err => console.log(err));
+            }, 0);
+        } catch (err) {
+            console.log("Error:", err);
+        }
     };
+    
 
 
     return (
