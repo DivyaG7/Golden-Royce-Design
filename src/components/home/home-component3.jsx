@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../home/home-component3.css';
-// import axios from 'axios';
+import axios from 'axios';
 
 
 export const Contact = () => {
@@ -14,30 +14,19 @@ export const Contact = () => {
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
-      };
-    
-      const handleSubmit = async (e) => {
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-    
-        try {
-          const response = await fetch('/api/submitFormData', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
-    
-          if (response.ok) {
-            console.log('Form data submitted successfully');
-            setFormData({ name: '', email: '' });
-          } else {
-            console.error('Failed to submit form data:', response.statusText);
-          }
-        } catch (error) {
-          console.error('Error submitting form data:', error);
-        }
-      };
+        console.log(formData);
+        axios.post('http://localhost:8001/form', formData)
+            .then((res) => {
+                console.log(res);
+                // Reset form data
+                setFormData({ name: '', email: '' });
+            })
+            .catch(err => console.log(err));
+    };
 
 
     return (
