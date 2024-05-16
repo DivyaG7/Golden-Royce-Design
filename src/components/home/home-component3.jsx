@@ -19,7 +19,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(formData);
-        axios.post('modals/form', formData)
+        axios.post('/server', formData)
             .then((res) => {
                 console.log(res);
                 // Reset form data
