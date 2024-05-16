@@ -19,7 +19,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(formData);
-        axios.post('https://www.goldenroycedesign.com/form', formData)
+        axios.post('https://www.goldenroycedesign.com/server', formData)
             .then((res) => {
                 console.log(res);
                 // Reset form data
