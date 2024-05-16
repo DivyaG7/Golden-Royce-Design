@@ -13,19 +13,21 @@ export const Contact = () => {
 
 
     const handleChange = (e) => {
-        const { id, value } = e.target;
-        setFormData({ ...formData, [id]: value });
-      };
-    
-      const handleSubmit = async (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-          await axios.post('/submit-form', formData);
-          alert('Form submitted successfully!');
-        } catch (error) {
-          alert('Error submitting form!');
-        }
-      };
+        console.log(formData);
+        axios.post('http://localhost:8001/form', formData)
+            .then((res) => {
+                console.log(res);
+                // Reset form data
+                setFormData({ name: '', email: '' });
+            })
+            .catch(err => console.log(err));
+    };
+
 
     return (
         <div className='contact mt-5'>
