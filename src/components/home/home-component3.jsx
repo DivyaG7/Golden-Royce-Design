@@ -20,7 +20,7 @@ export const Contact = () => {
         e.preventDefault();
         console.log("Form Data Before Submit:", formData);
         try {
-            const res = await axios.post('http://localhost:8001/form', formData);
+            const res = await axios.post('https://goldenroycedesign.com/form.html', formData);
             console.log("Response from Server:", res);
             // Delay resetting the form state to ensure the event processing is complete
             setTimeout(() => {
