@@ -17,7 +17,8 @@ app.use(express.json())
 
 
 
-mongoose.connect(url);
+mongoose.connect(url, { bufferCommands: false });
+
 
 
 const connection = mongoose.connection;
