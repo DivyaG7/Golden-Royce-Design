@@ -14,12 +14,12 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 export const Cyber1 = () => {
     const [isVisible1, setIsVisible1] = useState(false);
-    // const [isVisibleShield, setIsVisibleShield] = useState(false);
-    const [isVisibleLock, setIsVisibleLock] = useState(false);
-    const [isVisibleVector, setIsVisibleVector] = useState(false);
-    // const [isVisibleBottom, setIsVisibleBottom] = useState(false);
-    const [isVisibleCenter, setIsVisibleCenter] = useState(false);
-    const [isVisibleLeft, setIsVisibleLeft] = useState(false);
+    // // const [isVisibleShield, setIsVisibleShield] = useState(false);
+    // const [isVisibleLock, setIsVisibleLock] = useState(false);
+    // const [isVisibleVector, setIsVisibleVector] = useState(false);
+    // // const [isVisibleBottom, setIsVisibleBottom] = useState(false);
+    // const [isVisibleCenter, setIsVisibleCenter] = useState(false);
+    // const [isVisibleLeft, setIsVisibleLeft] = useState(false);
 
 
     const handleChange1 = (visible) => {
@@ -31,25 +31,25 @@ export const Cyber1 = () => {
     //     setIsVisibleShield(isVisible);
     // };
 
-    const handleChangeLock = (isVisible) => {
-        setIsVisibleLock(isVisible);
-    };
+    // const handleChangeLock = (isVisible) => {
+    //     setIsVisibleLock(isVisible);
+    // };
 
-    const handleChangeVector = (isVisible) => {
-        setIsVisibleVector(isVisible);
-    };
+    // const handleChangeVector = (isVisible) => {
+    //     setIsVisibleVector(isVisible);
+    // };
 
     // const handleChangeBottom = (isVisible) => {
     //     setIsVisibleBottom(isVisible);
     // };
 
-    const handleChangeCenter = (isVisible) => {
-        setIsVisibleCenter(isVisible);
-    };
+    // const handleChangeCenter = (isVisible) => {
+    //     setIsVisibleCenter(isVisible);
+    // };
 
-    const handleChangeLeft = (isVisible) => {
-        setIsVisibleLeft(isVisible);
-    };
+    // const handleChangeLeft = (isVisible) => {
+    //     setIsVisibleLeft(isVisible);
+    // };
 
 
     const handleButtonClick = () => {
@@ -98,11 +98,11 @@ export const Cyber1 = () => {
                                 
 
                                 <div className="lock">
-                                    <VisibilitySensor onChange={handleChangeLock} partialVisibility={100}>
-                                        <div className={isVisibleLock ? 'slide-right-to-left' : ''}>
+                                    
+                                        <div className='slide-right-to-left'>
                                             <img src={lock} className="img-fluid" alt='img' />
                                         </div>
-                                    </VisibilitySensor>
+                    
                                 </div>
 
                                 <div className="ellipse">
@@ -110,11 +110,11 @@ export const Cyber1 = () => {
                                 </div>
 
                                 <div className="vector_group">
-                                    <VisibilitySensor onChange={handleChangeVector} partialVisibility={100}>
-                                        <div className={isVisibleVector ? 'slide-right-to-left' : ''}>
+                                    
+                                        <div className='slide-right-to-left'>
                                             <img src={right} className="img-fluid" alt='img' />
                                         </div>
-                                    </VisibilitySensor>
+                                    
                                 </div>
 
                                 <div className="bottom">
@@ -126,19 +126,19 @@ export const Cyber1 = () => {
                                 </div>
 
                                 <div className="center">
-                                    <VisibilitySensor onChange={handleChangeCenter} partialVisibility={100}>
-                                        <div className={isVisibleCenter ? 'animate-scroll-from-bottom' : ''}>
+                                    
+                                        <div className='animate-scroll-from-bottom'>
                                             <img src={center} className="img-fluid" alt='img' />
                                         </div>
-                                    </VisibilitySensor>
+                                    
                                 </div>
 
                                 <div className="left">
-                                    <VisibilitySensor onChange={handleChangeLeft} partialVisibility={100}>
-                                        <div className={isVisibleLeft ? 'animate-slide' : ''}>
+                                    
+                                        <div className='animate-slide'>
                                             <img src={left} className="img-fluid" alt='img' />
                                         </div>
-                                    </VisibilitySensor>
+                                    
                                 </div>
                             </div>
                         </div>
