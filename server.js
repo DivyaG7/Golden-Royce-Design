@@ -34,12 +34,14 @@ connection.once('open',() => {
 })
 
 
-app.post('/form', async(req,res) => {
-    const{name,email} = req.body;
-    const formData = new form({name,email});
+app.post('/form', async (req, res) => {
+  const { name, email } = req.body;
+  const formData = new form({ name, email });
 
-    await formData.save();
-})
+  await formData.save();
+  res.status(201).json({ message: 'Form data saved successfully' });
+});
+
 
 const port = process.env.PORT || 8001;
 
