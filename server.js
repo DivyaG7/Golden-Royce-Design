@@ -34,15 +34,17 @@ connection.once('open',() => {
 })
 
 
-app.post('/form',(req,res) => {
+app.post('/form', async(req,res) => {
     const{name,email} = req.body;
     const formData = new form({name,email});
 
-    formData.save();
+    await formData.save();
 })
 
-app.listen('8001', () => {
-    console.log("app running on port 8001")
-})
+const port = process.env.PORT || 8001;
+
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+});
 
 
