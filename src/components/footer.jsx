@@ -1,7 +1,7 @@
 import React from 'react'
 import footer from '../assets/footer.png'
 import '../components/footer.css'
-import { faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/logo_grd_RED AND GOLD_final 4.png'
 import { Link } from 'react-router-dom';
@@ -67,7 +67,7 @@ export const Footer = () => {
                                         <FontAwesomeIcon icon={faFacebookF} size="1x" />
                                     </div> */}
                                     <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faTwitter} size="1x" />
+                                        <FontAwesomeIcon icon={faXTwitter} size="1x" />
                                     </div>
                                     <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
