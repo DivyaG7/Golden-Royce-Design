@@ -76,7 +76,7 @@ export const Footer = () => {
                                         <FontAwesomeIcon icon={faInstagram} size="1x" />
                                     </div> */}
                                 </div>
-                                <p className='mt-4'>connect@goldenroycedesign.com</p>
+                                <p className='mt-4' style={{ fontWeight: 700 }}>connect@goldenroycedesign.com</p>
                             </div>
                         </div>
                     </div>
