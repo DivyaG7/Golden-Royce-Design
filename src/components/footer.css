@@ -77,3 +77,38 @@
     color: #6A7EFB;
     font-size: 24px; /* Adjust the font size as needed */
 }
+
+
+@media screen and (max-width: 600px){
+    #foot1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        left: 0;
+    }
+
+    #foot2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+
+    #foot3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        left: 0;
+    }
+
+    #foot4{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        left: 0;
+    }
+
+}

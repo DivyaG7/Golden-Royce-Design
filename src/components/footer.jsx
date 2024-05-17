@@ -1,9 +1,10 @@
 import React from 'react'
 import footer from '../assets/footer.png'
 import '../components/footer.css'
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/logo_grd_RED AND GOLD_final 4.png'
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -25,20 +26,28 @@ export const Footer = () => {
 
                 <div className='mt-5 mb-3'>
                     <div className='row'>
-                        <div className='col-md-4 mb-2' id='foot1'>
-                            <p style={{ fontWeight: 700 }}>Golden Royce Design</p>
-                            <img src={logo} alt='logo' style={{ width: '50px' }} />
+                        <div className='col-md-4 mb-4' id='foot1'>
+                            <div>
+                                <p style={{ fontWeight: 700 }}>Golden Royce Design</p>
+                            </div>
+                            <div>
+                                <Link to='/'>
+                                    <img src={logo} alt='logo' style={{ width: '50px' }} />
+                                </Link>
+                            </div>
                         </div>
                         <div className='col-md-4 mb-2' id='foot2'>
-                            <h3 style={{ fontWeight: '800' }}><span style={{
-                                backgroundImage: 'linear-gradient(to bottom, #DF2D2D, #FFC800)',
-                                backgroundClip: 'text',
-                                color: 'transparent'
-                            }}>
-                                Business Made Smart
-                            </span></h3>
-                            <p className='text-center mt-5' style={{ fontWeight: '500' }}>Do you have a project in mind, that you feel our
-                                approach would work well for</p>
+                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}>
+                                <h3 style={{ fontWeight: '800' }}><span style={{
+                                    backgroundImage: 'linear-gradient(to bottom, #DF2D2D, #FFC800)',
+                                    backgroundClip: 'text',
+                                    color: 'transparent'
+                                }}>
+                                    Our Location
+                                </span></h3>
+                                <p className='text-left mt-5' style={{ fontWeight: '500' }}>Sidco Electronic Complex, Unit No: 37,</p>
+                                <p className='text-left' style={{ fontWeight: '500' }}>Block-1, Third Floor, Thiru Vi Ka Industrial Estate, </p>
+                                <p className='text-left' style={{ fontWeight: '500' }}>Guindy, Chennai, Tamil Nadu - 600032</p></div>
                             {/* <form>
                                 <div className="mb-3 mt-3">
                                     <input type="email" className="form-control" id="email" placeholder='Enter your email address' style={{border: '2px solid gray'}} />
@@ -51,27 +60,28 @@ export const Footer = () => {
                                 <button style={{ border: 'none', background: 'transparent', color: 'white', fontWeight: '700' }}>Hire us</button>
                             </div>
 
-                            <div className='mt-5'>
-                                <p>Connect With us</p>
-                                <div className="d-flex gap-2">
-                                    <div className="facebook-icon">
+                            <div className='mt-4' id='foot4'>
+                                <p className='text-center'>Connect With us</p>
+                                <div className="d-flex gap-2 justify-content-center align-items-center">
+                                    {/* <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faFacebookF} size="1x" />
-                                    </div>
+                                    </div> */}
                                     <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faTwitter} size="1x" />
                                     </div>
                                     <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
                                     </div>
-                                    <div className="facebook-icon">
+                                    {/* <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faInstagram} size="1x" />
-                                    </div>
+                                    </div> */}
                                 </div>
+                                <p className='mt-4'>connect@goldenroycedesign.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
