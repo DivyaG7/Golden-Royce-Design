@@ -1,0 +1,12 @@
+.service .service-area{
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
+.row .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
