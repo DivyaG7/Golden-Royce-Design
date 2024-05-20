@@ -1,5 +1,5 @@
 {
-  "name": "goldenroyce",
+  "name": "golden-royce-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,11 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongodb": "^6.5.0",
-    "mongoose": "^8.3.5",
     "nodemon": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,7 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "node server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
