@@ -36,6 +36,11 @@ export const Home = () => {
         setIsVisible4(visible);
     };
 
+    const handleButtonClick = () => {
+        const nextSection = document.getElementById('discover');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <>
             <div className='home'>
@@ -59,28 +64,28 @@ export const Home = () => {
 
                 <div className='row justify-content-center mt-5 home-img'>
                     <div className='col-md-8 col-12 d-flex justify-content-center gap-4' >
-                        
-                            <div className= 'animate-scroll-from-bottom'>
-                                <Link to="/Buzzbee">
-                                    <img src={home1} alt='img' className='img-fluid' />
-                                </Link>
-                            </div>
 
-                        
-                            <div className='animate-scroll'>
-                                <Link to="/CyberSecurity">
-                                    <img src={home2} alt='img' className='img-fluid' />
-                                </Link>
-                            </div>
-                        
+                        <div className='animate-scroll-from-bottom'>
+                            <Link to="/Buzzbee">
+                                <img src={home1} alt='img' className='img-fluid' />
+                            </Link>
+                        </div>
 
-                        
-                            <div className='animate-scroll-from-bottom1'>
-                                <Link to="/It">
-                                    <img src={home3} alt='img' className='img-fluid' />
-                                </Link>
-                            </div>
-                        
+
+                        <div className='animate-scroll'>
+                            <Link to="/CyberSecurity">
+                                <img src={home2} alt='img' className='img-fluid' />
+                            </Link>
+                        </div>
+
+
+
+                        <div className='animate-scroll-from-bottom1'>
+                            <Link to="/It">
+                                <img src={home3} alt='img' className='img-fluid' />
+                            </Link>
+                        </div>
+
 
                     </div>
                     <div className='col-8 dot-img mt-5'>
@@ -88,13 +93,12 @@ export const Home = () => {
                     </div>
                     <div className='col-8 mt-5 home-p'>
                         <p className='animate-scroll-from-bottom1'>We design and build beautiful brands, websites and products for startups and tech companies.</p>
-                        <Link to="/ItServicePage">
-                            <button className='mt-5 animate-scroll-from-bottom2'>Discover More</button> </Link>
+                        <button className='mt-5 animate-scroll-from-bottom2' onClick={handleButtonClick}>Discover More</button>
                     </div>
                 </div>
             </section >
 
-            <section>
+            <section id='discover'>
                 <Expertise />
             </section>
 
