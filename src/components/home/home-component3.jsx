@@ -59,7 +59,7 @@ export const Contact = () => {
                             <div className="mb-3 mt-3">
                                 <input type="email" className="form-control text-center" id="email" placeholder='Email' style={{ borderRadius: '20px', border: '1px solid black' }} value={formData.email} onChange={handleChange} />
                             </div>
-                            <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }}>Submit</button>
+                            <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }} onClick={toggleWidth} >Submit</button>
                         </form>
                     </div>
 
