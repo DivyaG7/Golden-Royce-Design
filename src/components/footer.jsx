@@ -69,9 +69,11 @@ export const Footer = () => {
                                     <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faXTwitter} size="1x" />
                                     </div>
-                                    <div className="facebook-icon">
-                                        <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
-                                    </div>
+                                    <Link to='https://www.linkedin.com/company/grdind/'>
+                                        <div className="facebook-icon">
+                                            <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
+                                        </div>
+                                    </Link>
                                     {/* <div className="facebook-icon">
                                         <FontAwesomeIcon icon={faInstagram} size="1x" />
                                     </div> */}
