@@ -1,0 +1,28 @@
+.buzzbee3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.buzz-gif-container img{
+   display: none;
+}
+
+.buzz-gif-container:hover img{
+    display: block;
+}
+
+@media screen and (max-width: 500px){
+    .buzz-gif-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buzz-gif-container .buzz-gif-img{
+        width: 50% !important;
+    }
+
+    .buzz-gif-container .buzz-gif-cont{
+        width: 100% !important;
+    }
+}
+

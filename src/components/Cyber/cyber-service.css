@@ -1,0 +1,13 @@
+.cyber-service{
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px){
+    #left-col1{
+        width: 100%;
+    }
+    #left-col2{
+        width: 100%;
+    }
+}

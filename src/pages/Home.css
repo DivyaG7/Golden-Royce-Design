@@ -1,0 +1,157 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+}
+
+.heading .hr{
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    width: 10vw;
+    flex: 1;
+}
+
+h6 {
+    margin: 0 10px; 
+    color: #797878;
+}
+
+.head-business{
+    display: flex;
+    justify-content: center;
+}
+
+.head-business p{
+    font-size: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+.head-business span{
+    font-weight: 600;
+}
+
+.home-img{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home-img .image{
+    width: 20%;
+}
+
+.home-img .dot-img img{
+    width: 70%;
+}
+
+.home-img .home-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img p{
+    width: 40%;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    .head-business p{
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .home-img p{
+        width: 80%;
+    }
+
+    .home-p button{
+        font-size: 12px;
+        padding: .5rem 2rem;
+    }
+}
+
+.home-p button{
+    color: white;
+    border: none;
+    background: #AD000E;
+    border-radius: 30px;
+    padding: .5rem 4rem;
+}
+
+/* Animation */
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide {
+    animation: slideIn 2s forwards;
+  }
+  
+  /* image animation */
+
+  @keyframes scrollFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scrollFromTop 1s ease forwards;
+  }
+  
+  @keyframes scrollFromBottom {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll-from-bottom {
+    animation: scrollFromBottom 1s ease forwards;
+  }
+
+  @keyframes scrollFromBottom1 {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll-from-bottom1 {
+    animation: scrollFromBottom1 1.5s ease forwards;
+  }
+  
+  @keyframes scrollFromBottom2 {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll-from-bottom2 {
+    animation: scrollFromBottom2 2s ease forwards;
+  }

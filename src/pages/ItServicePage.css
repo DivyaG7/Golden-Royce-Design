@@ -1,0 +1,24 @@
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: #DDD1BF;
+    border-radius: 50%;
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+@media screen and (min-width: 768px) {
+    .circle {
+        margin: 1rem 6rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .landingImg{
+        width: 70% !important;
+    }
+    .circle {
+       width: 15px;
+       height: 15px;
+    }
+}

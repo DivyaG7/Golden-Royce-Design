@@ -1,0 +1,172 @@
+.container {
+  margin: 1rem 3rem;
+}
+
+.navbar {
+  background-color: transparent;
+  /* Set the initial background color */
+}
+
+.navbar .navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+#bar1 {
+  width: 35px;
+}
+
+#bar2 {
+  width: 25px;
+}
+
+#bar3 {
+  width: 15px;
+}
+
+
+.nav-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.nav-links li {
+  margin-bottom: 20px;
+  padding: 2rem;
+}
+
+.nav-links span {
+  padding: 30px;
+  color: #88888A;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+  /* change the color on hover as needed */
+}
+
+.close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ffd700;
+  /* change the color on hover as needed */
+}
+
+.nav-grid {
+  display: flex;
+}
+
+.nav-column {
+  display: flex;
+  padding: 4rem 4rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-image {
+  position: absolute;
+  top: -25px;
+  /* Adjust this value as needed to position the image */
+  left: 70%;
+  /* Adjust this value as needed to horizontally center the image */
+  transform: translateX(-50%);
+  display: none;
+  width: 150px;
+}
+
+.nav-links li:hover .nav-image {
+  display: block;
+}
+
+
+@media screen and (max-width:1000px) {
+  .nav-grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: scroll;
+    margin-top: 40%;
+  }
+
+  .nav-column {
+    display: flex;
+    padding: 0 2rem;
+  }
+
+  .nav-links li a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .nav-links li {
+    margin-bottom: 10px;
+    padding: 1.7rem;
+    padding-left: 3px;
+  }
+
+  .close-btn {
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .nav-image {
+    top: -18px;
+    width: 100px;
+  }
+
+}
+
+.black-background {
+  background-color: black;
+  /* Add any additional styles for black background navbar */
+}
