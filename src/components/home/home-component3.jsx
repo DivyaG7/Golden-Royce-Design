@@ -20,7 +20,7 @@ export const Contact = () => {
         e.preventDefault();
         console.log(formData);
         try {
-            const res = await axios.post('http://localhost:8001/form', formData);
+            const res = await axios.post('https://goldenroycedesign-tliu.onrender.com/form', formData);
             console.log(res);
             // Reset form data
             setFormData({ name: '', email: '' });
