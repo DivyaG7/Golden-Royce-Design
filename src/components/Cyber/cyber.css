@@ -123,5 +123,5 @@
   }
   
   .animateScroll {
-    animation: scrollFromTop 1s ease forwards;
+    animation: scrollFromTop 2s ease forwards;
   }
