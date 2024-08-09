@@ -33,7 +33,6 @@ connection.once('open',() => {
     console.log("database connected!")
 })
 
-
 app.post('/form', async (req, res) => {
   const { name, email } = req.body;
   const formData = new form({ name, email });

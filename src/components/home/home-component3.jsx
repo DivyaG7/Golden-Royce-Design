@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import '../home/home-component3.css';
 import axios from 'axios';
+import { Modal, Button } from 'react-bootstrap';
 
 
 export const Contact = () => {
     const [secondColumnWidth, setSecondColumnWidth] = useState('80%');
     const [formData, setFormData] = useState({ name: '', email: '' });
+    const [showModal, setShowModal] = useState(false);
+    const [modalMessage, setModalMessage] = useState('');
+    const [modalTitle, setModalTitle] = useState('');
 
     const toggleWidth = () => {
         setSecondColumnWidth(secondColumnWidth === '20%' ? '40%' : '20%');
@@ -18,17 +22,28 @@ export const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData);
+        if (!formData.name || !formData.email) {
+            setModalTitle('Error');
+            setModalMessage('Please fill out all fields.');
+            setShowModal(true);
+            return;
+        }
+
         try {
             const res = await axios.post('https://golden-royce-design.onrender.com/form', formData);
-            console.log(res);
-            // Reset form data
+            setModalTitle('Success');
+            setModalMessage('Your form has been submitted successfully!');
             setFormData({ name: '', email: '' });
+            console.log(res);
         } catch (err) {
-            console.log(err);
+            setModalTitle('Error');
+            setModalMessage('An error occurred while submitting the form. Please try again.');
         }
+        setShowModal(true);
     };
-    
+
+    const handleClose = () => setShowModal(false);
+
 
 
     return (
@@ -61,6 +76,19 @@ export const Contact = () => {
                             </div>
                             <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }} onClick={toggleWidth} >Submit</button>
                         </form>
+                        <Modal show={showModal} onHide={handleClose} centered>
+                            <Modal.Header closeButton className="modal-header">
+                                <Modal.Title>{modalTitle}</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body className="modal-body">
+                                {modalMessage}
+                            </Modal.Body>
+                            <Modal.Footer className="modal-footer">
+                                <Button variant="secondary" onClick={handleClose}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
                     </div>
 
                     <div className="col-12 col-md-6 p-5 ms-5" style={{ background: 'white' }} id="column3">
@@ -75,6 +103,19 @@ export const Contact = () => {
                             </div>
                             <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }}>Submit</button>
                         </form>
+                        <Modal show={showModal} onHide={handleClose} centered>
+                            <Modal.Header closeButton className="modal-header">
+                                <Modal.Title>{modalTitle}</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body className="modal-body">
+                                {modalMessage}
+                            </Modal.Body>
+                            <Modal.Footer className="modal-footer">
+                                <Button variant="secondary" onClick={handleClose}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
                     </div>
                 </div>
             </div>
