@@ -9,6 +9,7 @@ import { Buzzbee } from './pages/Buzzbee';
 import { ItServicePage } from './pages/ItServicePage';
 import { BuzzBeeLanding } from './pages/BuzzBeeLanding';
 import { CyberSecurityLanding } from './pages/CyberSecurityLanding';
+import UserList from './pages/UserList';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/ItServicePage' element={<ItServicePage />} />
           <Route path='/BuzzBeeLanding' element={<BuzzBeeLanding />} />
           <Route path='/CyberSecurityLanding' element={<CyberSecurityLanding />} />
+          <Route path='/UserList' element={<UserList />} />
         </Routes>
         <Footer />
       </Router>

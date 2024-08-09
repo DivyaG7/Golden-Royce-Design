@@ -41,6 +41,10 @@ app.post('/form', async (req, res) => {
   res.status(201).json({ message: 'Form data saved successfully' });
 });
 
+const userRoutes = require('./routes/users'); // Adjust path as needed
+app.use('/api', userRoutes); // Prefix your routes as needed
+
+
 
 const port = process.env.PORT || 8001;
 app.listen(port, () => {
