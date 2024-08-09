@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Form = require('../models/form.model'); // Adjust the path as needed
+const Form = require('./modals/form.modal'); // Ensure correct path to your model
 
 // Endpoint to get all users
 router.get('/users', async (req, res) => {
