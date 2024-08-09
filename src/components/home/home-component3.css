@@ -27,27 +27,45 @@
     /* Rounded corners */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     /* Shadow for depth */
+    text-align: center;
 }
 
 .modal-header {
     border-bottom: none;
     /* Remove default border */
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-title {
+    text-align: center;
+    font-weight: bold;
 }
 
 .modal-footer {
     border-top: none;
     /* Remove default border */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
 }
 
 .close {
-    color: #AD000E;
-    /* Close button color */
-    font-size: 24px;
+    display: none;
+    /* Hide close button */
 }
 
 .close:hover {
     color: #93000a;
     /* Darker shade for hover effect */
+}
+
+.form-control {
+    text-align: center;
 }
 
 .btn-primary {
@@ -58,6 +76,9 @@
     /* Text color */
     border-radius: 25px;
     /* Rounded corners */
+    display: block;
+    /* Ensure button is a block element for centering */
+    margin: 0 auto;
 }
 
 .btn-primary:hover {
@@ -74,6 +95,7 @@
     /* Text color */
     border-radius: 25px;
     /* Rounded corners */
+    text-align: center;
 }
 
 .btn-secondary:hover {

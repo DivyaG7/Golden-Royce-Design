@@ -37,7 +37,7 @@ export const Contact = () => {
             console.log(res);
         } catch (err) {
             setModalTitle('Error');
-            setModalMessage('An error occurred while submitting the form. Please try again.');
+            setModalMessage('Email is already registered.');
         }
         setShowModal(true);
     };
@@ -77,11 +77,9 @@ export const Contact = () => {
                             <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }} onClick={toggleWidth} >Submit</button>
                         </form>
                         <Modal show={showModal} onHide={handleClose} centered>
-                            <Modal.Header closeButton className="modal-header">
-                                <Modal.Title>{modalTitle}</Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body className="modal-body">
-                                {modalMessage}
+                            <Modal.Body className="modal-body text-center">
+                                <h5 className="modal-title">{modalTitle}</h5>
+                                <p>{modalMessage}</p>
                             </Modal.Body>
                             <Modal.Footer className="modal-footer">
                                 <Button variant="secondary" onClick={handleClose}>
@@ -104,13 +102,11 @@ export const Contact = () => {
                             <button type="submit" className="btn mt-2" style={{ background: 'black', color: 'white', width: '100%', borderRadius: '20px' }}>Submit</button>
                         </form>
                         <Modal show={showModal} onHide={handleClose} centered>
-                            <Modal.Header closeButton className="modal-header">
-                                <Modal.Title>{modalTitle}</Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body className="modal-body">
-                                {modalMessage}
+                            <modalTitle className='mt-4' ><h5 className="modal-title">{modalTitle}</h5></modalTitle>
+                            <Modal.Body className="modal-body text-center">
+                                <p>{modalMessage}</p>
                             </Modal.Body>
-                            <Modal.Footer className="modal-footer">
+                            <Modal.Footer className="modal-footer mb-2">
                                 <Button variant="secondary" onClick={handleClose}>
                                     Close
                                 </Button>
