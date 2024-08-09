@@ -1,15 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const Form = require('./modals/form.modal'); // Ensure correct path to your model
+const Form = require('./models/form.model'); // Import the Form model
 
-// Endpoint to get all users
-router.get('/users', async (req, res) => {
+// Route to post form data
+router.post('/form', async (req, res) => {
+  const { name, email } = req.body;
   try {
-    const users = await Form.find(); // Retrieve all user documents
-    res.status(200).json(users);
+    const formData = new Form({ name, email });
+    await formData.save();
+    res.status(201).json({ message: 'Form data saved successfully' });
   } catch (error) {
-    console.error('Error fetching users:', error);
-    res.status(500).json({ message: 'Error fetching user details.' });
+    console.error('Error saving form data:', error);
+    res.status(500).json({ message: 'Error saving form data' });
   }
 });
 
