@@ -26,21 +26,21 @@ export const Buzzbee2 = () => {
                     onMouseOver={() => displayImageName('Design')}
                     onMouseOut={clearImageName}
                 >
-                    <img src={buzz1} alt="Imge 1" className="buzzImg img-fluid w-100" />
+                    <img src={buzz1} alt="Design_image" className="buzzImg img-fluid w-100" />
                 </div>
                 <div
                     className="imgcontainer w-25"
                     onMouseOver={() => displayImageName('Inspired Branding')}
                     onMouseOut={clearImageName}
                 >
-                    <img src={buzz2} alt="Imge 2" className="buzzImg img-fluid w-100" />
+                    <img src={buzz2} alt="Branding_image" className="buzzImg img-fluid w-100" />
                 </div>
                 <div
                     className="imgcontainer w-25"
                     onMouseOver={() => displayImageName('Advertisement')}
                     onMouseOut={clearImageName}
                 >
-                    <img src={buzz3} alt="Imge 3" className="buzzImg img-fluid w-100" />
+                    <img src={buzz3} alt="Advertisement_image" className="buzzImg img-fluid w-100" />
                 </div>
                 <div className="w-25">
                     <div id="image-names" className='w-100 d-flex justify-content-center align-items-center'>{imageName}</div>

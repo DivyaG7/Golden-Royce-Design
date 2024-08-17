@@ -23,10 +23,10 @@ export const Expertise = () => {
                     <div className='col-md-6 first-expertise'>
                         <div className='d-flex w-100 gap-2'>
                             <div className='col-md-6 align-self-end'>
-                                <img src={home5} alt='img' className='img-fluid' style={{ height: '50%' }} />
+                                <img src={home5} alt='Expertise_img' className='img-fluid' style={{ height: '50%' }} />
                             </div>
                             <div className='col-md-6'>
-                                <img src={home6} alt='img' className='img-fluid' />
+                                <img src={home6} alt='Expertise_img' className='img-fluid' />
                             </div>
                         </div>
                     </div>

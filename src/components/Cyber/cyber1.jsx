@@ -92,23 +92,23 @@ export const Cyber1 = () => {
                         <div flex="40" className="img_container">
                             <div className="sheild-container">
                                     <div className='animateScroll'> 
-                                        <img src={sheild} className="sheild img-fluid" alt='img' />
+                                        <img src={sheild} className="sheild img-fluid" alt='sheild_img' />
                                     </div>
 
                                 <div className="lock">
                                         <div className='slide-right-to-left'>
-                                            <img src={lock} className="img-fluid" alt='img' />
+                                            <img src={lock} className="img-fluid" alt='lock_img' />
                                         </div>
                                 </div>
 
                                 <div className="ellipse">
-                                    <img src={ellipse} className="img-fluid" alt='img' />
+                                    <img src={ellipse} className="img-fluid" alt='ellipse_img' />
                                 </div>
 
                                 <div className="vector_group">
                                     
                                         <div className='slide-right-to-left'>
-                                            <img src={right} className="img-fluid" alt='img' />
+                                            <img src={right} className="img-fluid" alt='rightvector_img' />
                                         </div>
                                     
                                 </div>
@@ -116,7 +116,7 @@ export const Cyber1 = () => {
                                 <div className="bottom">
                                     
                                         <div className='animate-scroll-from-bottom'>
-                                            <img src={bottom} className="img-fluid" alt='img' />
+                                            <img src={bottom} className="img-fluid" alt='bottomvector_img' />
                                         </div>
                                    
                                 </div>
@@ -124,7 +124,7 @@ export const Cyber1 = () => {
                                 <div className="center">
                                     
                                         <div className='animate-scroll-from-bottom'>
-                                            <img src={center} className="img-fluid" alt='img' />
+                                            <img src={center} className="img-fluid" alt='centervector_img' />
                                         </div>
                                     
                                 </div>
@@ -132,7 +132,7 @@ export const Cyber1 = () => {
                                 <div className="left">
                                     
                                         <div className='animate-slide'>
-                                            <img src={left} className="img-fluid" alt='img' />
+                                            <img src={left} className="img-fluid" alt='leftvector_img' />
                                         </div>
                                     
                                 </div>

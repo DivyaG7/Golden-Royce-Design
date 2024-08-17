@@ -46,7 +46,7 @@ export const Cyber2 = () => {
                     </div >
                     <div className='col-md-12 col-lg-6'>
                         <div className='d-flex justify-content-center align-items-center zoom-container'>
-                            <img src={Compilance} alt='img' className='img-fluid zoom-effect' style={{ width: '70%' }} />
+                            <img src={Compilance} alt='Compilance_img' className='img-fluid zoom-effect' style={{ width: '70%' }} />
                         </div>
                     </div>
                 </div>
