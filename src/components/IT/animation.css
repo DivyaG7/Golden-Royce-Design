@@ -8,8 +8,8 @@
 
   .rotate-left-top {
     margin-top: -45%;
-    margin-left: -50%;
-    width: 90vw;
+    margin-left: -45%;
+    width: 50vw;
     animation: rotateLeftTopAnimation 2s linear forwards; 
     animation-iteration-count: 1;
     transform-origin: left top;
@@ -104,6 +104,13 @@
   }
 
   @media screen and (min-width:1500px){
+    
+    .center {
+      position: absolute;
+      top: 50% !important;
+      left: 55% !important;
+    }
+    
     .it{
       margin-top: -50%;
       margin-left: 55%;
@@ -122,13 +129,14 @@
   }
 
   @media screen and (min-width:1200px) and (max-width:1499px){
+   
     .animation{
-      height: 90vh;
+      height: 90vh !important;
     }
     .center {
       position: absolute;
-      top: 50%;
-      left: 60%;
+      top: 50% !important;
+      left: 55% !important;
     }
     .it{
       margin-top: -40%;
@@ -149,12 +157,12 @@
 
   @media screen and (min-width:768px) and (max-width:1199px){
     .animation{
-      height: 70vh;
+      height: 70vh !important;
     }
     .center {
       position: absolute;
-      top: 40%;
-      left: 50%;
+      top: 40% !important;
+      left: 50% !important;
     }
     .it{
       margin-top: -45%;
@@ -174,13 +182,14 @@
   }
 
   @media screen and (min-width: 600px) and (max-width:767px){
+    
     .animation{
-      height: 45vh;
+      height: 45vh !important;
     }
     .center {
       position: absolute;
-      top: 35%;
-      left: 60%;
+      top: 35% !important;
+      left: 60% !important;
     }
     .it{
       margin-top: -48%;
@@ -204,13 +213,14 @@
   }
 
   @media screen and (max-width:599px){
+    
     .animation{
-      height: 40vh;
+      height: 40vh !important;
     }
     .center {
       position: absolute;
-      top: 30%;
-      left: 60%;
+      top: 30% !important;
+      left: 60% !important;
     }
     .it{
       margin-top: -60%;
@@ -234,17 +244,18 @@
   }
 
   @media screen and (max-width:400px){
+    
     .animation{
       height: 30vh;
     }
 
     .rotate-bottom-right{
-      margin-top: 10%;
+      margin-top: 10% !important;
     }
     .center {
       position: absolute;
-      top: -25%;
-      left: 60%;
+      top: -25% !important;
+      left: 60% !important;
     }
     .it{
       margin-top: -50%;
