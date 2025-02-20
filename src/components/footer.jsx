@@ -43,11 +43,15 @@ export const Footer = () => {
                                     backgroundClip: 'text',
                                     color: 'transparent'
                                 }}>
-                                    Our Location
+                                    Contact Us
                                 </span></h3>
-                                <p className='text-left mt-5' style={{ fontWeight: '500' }}>Sidco Electronic Complex, Unit No: 37,</p>
+                                {/* <p className='text-left mt-5' style={{ fontWeight: '500' }}>Sidco Electronic Complex, Unit No: 37,</p>
                                 <p className='text-left' style={{ fontWeight: '500' }}>Block-1, Third Floor, Thiru Vi Ka Industrial Estate, </p>
-                                <p className='text-left' style={{ fontWeight: '500' }}>Guindy, Chennai, Tamil Nadu - 600032</p></div>
+                                <p className='text-left' style={{ fontWeight: '500' }}>Guindy, Chennai, Tamil Nadu - 600032</p> */}
+                                <p className='mt-4' style={{ fontWeight: 700 }}>
+                                    <a href="mailto:connect@goldenroycedesign.com" style={{textDecoration: 'none', color: 'black'}}>connect@goldenroycedesign.com</a>
+                                </p>
+                                </div>
                             {/* <form>
                                 <div className="mb-3 mt-3">
                                     <input type="email" className="form-control" id="email" placeholder='Enter your email address' style={{border: '2px solid gray'}} />
@@ -78,9 +82,7 @@ export const Footer = () => {
                                         <FontAwesomeIcon icon={faInstagram} size="1x" />
                                     </div> */}
                                 </div>
-                                <p className='mt-4' style={{ fontWeight: 700 }}>
-                                    <a href="mailto:connect@goldenroycedesign.com" style={{textDecoration: 'none', color: 'black'}}>connect@goldenroycedesign.com</a>
-                                </p>
+                                
                             </div>
                         </div>
                     </div>
