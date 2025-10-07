@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import { Navbar } from '../components/navbar'
 import '../pages/Home.css'
-import home1 from '../assets/home1.png'
+// import home1 from '../assets/home1.png'
 import home2 from '../assets/home2.png'
 import home3 from '../assets/home3.png'
 import home4 from '../assets/home4.png'
@@ -65,11 +65,11 @@ export const Home = () => {
                 <div className='row justify-content-center mt-5 home-img'>
                     <div className='col-md-8 col-12 d-flex justify-content-center gap-4' >
 
-                        <div className='animate-scroll-from-bottom'>
+                        {/* <div className='animate-scroll-from-bottom'>
                             <Link to="/Buzzbee">
                                 <img src={home1} alt='img' className='img-fluid' />
                             </Link>
-                        </div>
+                        </div> */}
 
 
                         <div className='animate-scroll'>

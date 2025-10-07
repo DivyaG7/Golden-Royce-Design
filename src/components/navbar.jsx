@@ -5,7 +5,7 @@ import logo from "../assets/logo_grd_RED AND GOLD_final 4.png";
 import home from '../assets/Home-page.png'
 import IT from '../assets/IT-page.png'
 import cyber from '../assets/Cyber-page.png'
-import buzzbee from '../assets/Buzzbee-page.png'
+// import buzzbee from '../assets/Buzzbee-page.png'
 
 
 
@@ -44,7 +44,7 @@ export const Navbar = ({ blackBackground }) => {
                             </div>
                             <div className="nav-column">
                                 <ul className="nav-links">
-                                    <li><Link to='/BuzzBee' onClick={toggleNav}><span>04</span>BuzzBee<img src={buzzbee} alt="buzzbee-img" className="nav-image" /></Link></li>
+                                    {/* <li><Link to='/BuzzBee' onClick={toggleNav}><span>04</span>BuzzBee<img src={buzzbee} alt="buzzbee-img" className="nav-image" /></Link></li> */}
                                     {/* <li><Link to='/Contact' onClick={toggleNav}><span>05</span>Contact<img src='' alt="contact-img" className="nav-image" /></Link></li> */}
                                 </ul>
                             </div>
